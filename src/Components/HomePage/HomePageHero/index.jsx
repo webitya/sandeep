@@ -29,11 +29,11 @@ export default function HomePageHeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl font-bold mb-6 leading-tight text-gray-800">
-            Accelerate Your Sales & Marketing Growth
+          <h1 className="text-4xl font-bold mb-6 leading-tight text-gray-800">
+          Build High-Performing Sales & Marketing Teams — Fast
           </h1>
           <p className="text-gray-600 text-lg mb-8">
-            India’s #1 Talent Platform for High-Performance Revenue Teams. We <strong>recruit</strong>, <strong>train</strong>, and <strong>grow</strong> your team to scale from 
+          India’s Only Performance-First Talent Platform for Revenue Teams. We help you <strong>recruit</strong>, <strong>train</strong>, and <strong>grow</strong> sales and marketing talent to scale your business from
             <span className="text-blue-700 font-semibold"> ₹1 Cr</span> to 
             <span className="text-blue-700 font-semibold"> ₹1,000 Cr</span>.
           </p>
@@ -113,7 +113,7 @@ export default function HomePageHeroSection() {
     type="submit"
     className="mt-5 w-full bg-blue-600 text-white py-2 text-sm rounded-md font-medium hover:bg-blue-700 transition"
   >
-    SUBMIT
+    DROP YOUR ENQUIRY
   </button>
 </form>
 

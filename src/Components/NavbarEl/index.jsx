@@ -34,20 +34,20 @@ const NavbarEl3 = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about-us' },
     { label: 'Services', href: '/services' }
+    
   ];
 
   const menus1 = [
     { label: 'Faqs', href: '/faqs' },
-    { label: 'Blogs', href: '/blog' },
     { label: 'Contact Us', href: '/contact-us' }
   ];
 
   return (
     <>
       <nav className={`fixed w-full z-[1000] transition-all duration-300 ${isSticky ? 'bg-white shadow-md' : 'bg-white'}`}>
-        <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4 py-3 sm:px-8">
+        <div className="mx-auto flex items-center justify-between px-2 py-3 sm:px-4">
           <Link href="/">
-            <img src="/logobbyy.svg" alt="brand-logo" className="w-28" />
+            <img src="/logobbyy.svg" alt="brand-logo" className="w-24" />
           </Link>
 
           {/* Desktop Menu */}
@@ -64,8 +64,8 @@ const NavbarEl3 = () => {
               </Link>
             ))}
 
-            {/* All Services Dropdown */}
-            <div
+            {/* All Services Dropdown start here */}
+            {/* <div
               className="relative group"
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
@@ -134,7 +134,8 @@ const NavbarEl3 = () => {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
+               {/* All Services Dropdown end  here */}
 
             {/* Resources Dropdown */}
             <div
@@ -150,6 +151,7 @@ const NavbarEl3 = () => {
                   <div className="flex flex-col space-y-1">
                     <Link href="/case-studies" className="text-sm text-gray-700 hover:text-blue-600">Case Studies</Link>
                     <Link href="/free-resources" className="text-sm text-gray-700 hover:text-blue-600">Free Resources</Link>
+                    <Link href="/blogs" className="text-sm text-gray-700 hover:text-blue-600">Blogs</Link>
                   </div>
                 </div>
               )}
