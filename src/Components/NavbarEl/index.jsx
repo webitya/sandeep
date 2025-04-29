@@ -38,6 +38,8 @@ const NavbarEl3 = () => {
   ];
 
   const menus1 = [
+    { label: 'Marketing Support', href: '/marketing-support' },
+    { label: 'Faqs', href: '/faqs' },
     { label: 'Faqs', href: '/faqs' },
     { label: 'Contact Us', href: '/contact-us' }
   ];
@@ -171,14 +173,14 @@ const NavbarEl3 = () => {
             ))}
 
             {/* CTA Button */}
-            <Link href="https://calendly.com/salessyllabus" target="_blank">
+            <Link href="/adacemic" target="_blank">
               <Button
                 variant="contained"
                 size="small"
                 sx={{ bgcolor: '#007BFF', textTransform: 'none', fontWeight: 600 }}
                 endIcon={<EditNote />}
               >
-                Book Appointment
+                Academic
               </Button>
             </Link>
           </div>
