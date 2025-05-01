@@ -80,16 +80,16 @@ export default function AboutUsPage() {
         role="navigation"
         aria-label="About Us Navigation"
       >
+        {/* Backdrop for Mobile */}
+        {isSidebarOpen && <div className="fixed inset-0 bg-black opacity-50 z-30 lg:hidden" onClick={toggleSidebar}></div>}
+
         <div className="flex flex-col p-4 space-y-2">
           {navLinks.map(({ id, label, icon }) => (
             <button
               key={id}
               onClick={() => scrollToSection(id)}
-              className={`flex items-center gap-2 w-full text-left text-sm px-3 py-2 rounded-md transition-all duration-200 ${
-                activeSection === id
-                  ? 'bg-blue-100 text-blue-700 font-semibold'
-                  : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
-              }`}
+              className={`flex items-center gap-2 w-full text-left text-sm px-3 py-2 rounded-md transition-all duration-200
+                ${activeSection === id ? 'bg-blue-100 text-blue-700 font-semibold' : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'}`}
             >
               <span className="text-blue-500">{icon}</span>
               <span>{label}</span>
