@@ -23,7 +23,6 @@ import AboutUsExperience from './AboutUsExperience';
 import AboutUsTimelineComponent from './AboutUsTimeline';
 import AboutUsCallToAction from './AboutUsCTA';
 
-// Demo nav links with icons
 const navLinks = [
   { id: 'who-we-are', label: 'Who We Are', icon: <InfoIcon fontSize="small" /> },
   { id: 'our-vision', label: 'Our Vision', icon: <VisibilityIcon fontSize="small" /> },
@@ -65,73 +64,55 @@ export default function AboutUsPage() {
 
   return (
     <>
-      {/* Toggle Button */}
+      {/* Mobile Toggle Button */}
       <IconButton
-        className="fixed top-4 left-4 z-50 bg-gradient-to-r from-blue-600 to-blue-500 text-white shadow-xl lg:hidden"
+        className="fixed top-4 left-4 z-50 bg-blue-600 text-white shadow-md lg:hidden"
         onClick={toggleSidebar}
-        size="large"
       >
         {isSidebarOpen ? <CloseIcon /> : <MenuIcon />}
       </IconButton>
 
-      {/* Sidebar */}
+      {/* Sidebar Navigation */}
       <aside
-        className={`fixed top-20 left-0 h-[calc(100%-5rem)] w-44 bg-white border-r border-gray-200 shadow-xl transition-transform duration-300 ease-in-out z-40
+        className={`fixed top-20 left-0 h-[calc(100%-5rem)] w-52 bg-white border-r border-gray-200 shadow-lg transition-transform duration-300 ease-in-out z-40
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} 
           lg:translate-x-0 lg:block overflow-y-auto`}
+        role="navigation"
+        aria-label="About Us Navigation"
       >
-        <div className="h-full flex flex-col justify-start">
-          <ul className="space-y-3 p-4">
-            {navLinks.map(({ id, label, icon }) => (
-              <li
-                key={id}
-                onClick={() => scrollToSection(id)}
-                className={`flex items-center space-x-2 text-sm px-3 py-2 rounded-md cursor-pointer transition-all duration-200 group ${
-                  activeSection === id
-                    ? 'bg-blue-100 text-blue-700 font-semibold'
-                    : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
-                }`}
-              >
-                <span className="text-blue-500">{icon}</span>
-                <span>{label}</span>
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-col p-4 space-y-2">
+          {navLinks.map(({ id, label, icon }) => (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`flex items-center gap-2 w-full text-left text-sm px-3 py-2 rounded-md transition-all duration-200 ${
+                activeSection === id
+                  ? 'bg-blue-100 text-blue-700 font-semibold'
+                  : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+              }`}
+            >
+              <span className="text-blue-500">{icon}</span>
+              <span>{label}</span>
+            </button>
+          ))}
         </div>
       </aside>
 
       {/* Main Content */}
-      <main
-        className={`transition-all duration-300 ease-in-out ${
-          isSidebarOpen ? 'ml-44' : 'ml-0'
-        } lg:ml-44`}
-      >
-        <AboutUsHeroSection/>
-        <section id="who-we-are" className="mb-2 scroll-mt-2">
-          <AboutUsWhoWeAre/>
+      <main className={`transition-all duration-300 ease-in-out ${isSidebarOpen ? 'ml-52' : 'ml-0'} lg:ml-52`}>
+        <AboutUsHeroSection />
+        <section id="who-we-are" className="mb-0 scroll-mt-0"><AboutUsWhoWeAre /></section>
+        <section id="our-vision" className="mb-0 scroll-mt-0">
+          <AboutUsOurVision />
+          <AboutUsWhatWeDo />
+          <AboutUsWhoWeWorkWith />
         </section>
-        <section id="our-vision" className="mb-2 scroll-mt-2">
-              <AboutUsOurVision/>
-              <AboutUsWhatWeDo/>
-              {/* <A2AbWhatWeDoNutshell /> */}
-              <AboutUsWhoWeWorkWith /> 
-        </section>
-        <section id="our-services" className="mb-20 scroll-mt-24">
-          <AboutOurServicesSection />
-        </section>
-        <section id="why-choose-us" className="mb-20 scroll-mt-24">
-          <AboutWhyChooseUs />
-        </section>
-        <section id="experience" className="mb-20 scroll-mt-24">
-          <AboutUsExperience />
-        </section>
-        <section id="timeline" className="mb-20 scroll-mt-24">
-          <AboutUsTimelineComponent />
-        </section>
-        <section id="call-to-action" className="mb-20 scroll-mt-24">
-          <AboutUsCallToAction />
-        </section>
-         <FooterEl/>
+        <section id="our-services" className="mb-0 scroll-mt-0"><AboutOurServicesSection /></section>
+        <section id="why-choose-us" className="mb-0 scroll-mt-0"><AboutWhyChooseUs /></section>
+        <section id="experience" className="mb-0 scroll-mt-0"><AboutUsExperience /></section>
+        <section id="timeline" className="mb-0 scroll-mt-0"><AboutUsTimelineComponent /></section>
+        <section id="call-to-action" className="mb-0 scroll-mt-0"><AboutUsCallToAction /></section>
+        <FooterEl />
       </main>
     </>
   );
