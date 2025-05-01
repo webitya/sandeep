@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const AboutUsExperience = () => {
   return (
-    <section className="bg-gray-100 px-4 md:px-8 pt-0 md:pt-20">
+    <section className="bg-gray-100 px-4 md:px-8 pt-0 md:pt-2">
       <h2 className="text-4xl text-[#4C6DC7] font-bold text-center py-10 mb-10">
         Our Experience
       </h2>
