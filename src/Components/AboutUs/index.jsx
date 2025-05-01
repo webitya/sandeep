@@ -17,6 +17,11 @@ import AboutUsWhoWeAre from './AboutUsWhoWeAre';
 import AboutUsOurVision from './AboutUsVision';
 import AboutUsWhatWeDo from './AboutUsWhatWeDo';
 import AboutUsWhoWeWorkWith from './AboutUsWorkWith';
+import AboutOurServicesSection from './AboutOurServices';
+import AboutWhyChooseUs from './AboutWhyChooseUs';
+import AboutUsExperience from './AboutUsExperience';
+import AboutUsTimelineComponent from './AboutUsTimeline';
+import AboutUsCallToAction from './AboutUsCTA';
 
 // Demo nav links with icons
 const navLinks = [
@@ -112,19 +117,19 @@ export default function AboutUsPage() {
               <AboutUsWhoWeWorkWith /> 
         </section>
         <section id="our-services" className="mb-20 scroll-mt-24">
-          {/* <A2OurServicesSection /> */}
+          <AboutOurServicesSection />
         </section>
         <section id="why-choose-us" className="mb-20 scroll-mt-24">
-          {/* <AboutWhyChooseUs /> */}
+          <AboutWhyChooseUs />
         </section>
         <section id="experience" className="mb-20 scroll-mt-24">
-          {/* <AboutExperience /> */}
+          <AboutUsExperience />
         </section>
         <section id="timeline" className="mb-20 scroll-mt-24">
-          {/* <TimelineComponent /> */}
+          <AboutUsTimelineComponent />
         </section>
         <section id="call-to-action" className="mb-20 scroll-mt-24">
-          {/* <CallToAction /> */}
+          <AboutUsCallToAction />
         </section>
          <FooterEl/>
       </main>
