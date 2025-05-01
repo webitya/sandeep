@@ -5,6 +5,8 @@ import {
   StackedBarChartOutlined,
   GroupsOutlined,
   PersonAddAltOutlined,
+  ArrowForward,
+  KeyboardArrowDown,
 } from "@mui/icons-material";
 
 const steps = [
@@ -45,30 +47,39 @@ const RevenueTeamFramework = () => {
           How we build high-performing revenue teams across industries.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-6">
           {steps.map((step, index) => (
-            <div
-              key={index}
-              className="relative group bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:-translate-y-1"
-            >
-              {/* Animated Gradient Background Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-105 z-0" />
-
-              {/* Card Content */}
-              <div className="relative z-10 p-6 flex flex-col items-center text-center space-y-4">
-                <div className="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-600 to-purple-600 text-white shadow-md">
-                  {step.icon}
+            <React.Fragment key={index}>
+              <div className="relative group bg-white rounded-2xl shadow-md overflow-hidden transition-transform hover:-translate-y-1 w-full max-w-sm">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md scale-105 z-0" />
+                <div className="relative z-10 p-6 flex flex-col items-center text-center space-y-4">
+                  <div className="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-tr from-blue-600 to-purple-600 text-white shadow-md">
+                    {step.icon}
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
+                    {step.description}
+                  </p>
                 </div>
-
-                <h3 className="text-lg font-semibold text-gray-800 group-hover:text-white transition-colors duration-300">
-                  {step.title}
-                </h3>
-
-                <p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
-                  {step.description}
-                </p>
               </div>
-            </div>
+
+              {/* Only show arrow if not the last step */}
+              {index < steps.length - 1 && (
+                <div>
+                  {/* Show right arrow on large screens */}
+                  <div className="hidden lg:flex justify-center">
+                    <ArrowForward fontSize="large" className="text-blue-500" />
+                  </div>
+
+                  {/* Show down arrow on small screens */}
+                  <div className="flex lg:hidden justify-center">
+                    <KeyboardArrowDown fontSize="large" className="text-blue-500" />
+                  </div>
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>

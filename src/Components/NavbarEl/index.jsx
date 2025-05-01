@@ -40,7 +40,6 @@ const NavbarEl3 = () => {
   const menus1 = [
     { label: 'Marketing Support', href: '/marketing-support' },
     { label: 'Faqs', href: '/faqs' },
-    { label: 'Faqs', href: '/faqs' },
     { label: 'Contact Us', href: '/contact-us' }
   ];
 

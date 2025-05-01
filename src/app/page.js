@@ -1,3 +1,4 @@
+import FooterEl from "@/Components/FooterEl"
 import HomePageCompany from "@/Components/HomePage/HomePageCompany"
 import HomePageCTA from "@/Components/HomePage/HomePageCTA"
 import HomePageFAQSection from "@/Components/HomePage/HomePageFAQS"
@@ -21,6 +22,7 @@ const HomePage=()=>{
       <HomePageTestimonials/>
       <HomePageFAQSection/>
       <HomePageCTA/>
+      <FooterEl/>
     </>
   )
 }

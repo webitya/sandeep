@@ -11,7 +11,7 @@ const hiringTypes = [
       'Aligned with your long-term business goals',
       'Screened and performance-evaluated candidates',
     ],
-    icon: <BusinessCenter fontSize="large" className="text-white" />,
+    icon: <BusinessCenter fontSize="large" className="text-sky-600" />,
   },
   {
     title: 'Temporary Consultants',
@@ -20,35 +20,35 @@ const hiringTypes = [
       'Ideal for specialized skills and agile teams',
       'Sales strategists, campaign managers, marketing experts',
     ],
-    icon: <WorkOutline fontSize="large" className="text-white" />,
+    icon: <WorkOutline fontSize="large" className="text-sky-600" />,
   },
 ];
 
 const HomePageTypesOfHiring = () => {
   return (
-    <div className="relative py-20 bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white overflow-hidden">
-      {/* Soft floating gradient bubbles */}
+    <div className="relative py-20 bg-gradient-to-b from-white to-sky-50 text-gray-900 overflow-hidden">
+      {/* Soft floating pastel bubbles */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-        {[...Array(14)].map((_, i) => (
+        {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute bg-blue-400/10 rounded-full blur-2xl"
+            className="absolute bg-sky-300/20 rounded-full blur-3xl"
             style={{
-              width: `${20 + i * 6}px`,
-              height: `${20 + i * 6}px`,
+              width: `${30 + i * 8}px`,
+              height: `${30 + i * 8}px`,
               top: `${Math.random() * 100}%`,
               left: `${Math.random() * 100}%`,
             }}
             animate={{
-              y: [0, -20, 0],
-              opacity: [0.1, 0.25, 0.1],
+              y: [0, -30, 0],
+              opacity: [0.1, 0.2, 0.1],
             }}
             transition={{
-              duration: 12 + i,
+              duration: 16 + i,
               repeat: Infinity,
               repeatType: 'mirror',
               ease: 'easeInOut',
-              delay: i * 0.3,
+              delay: i * 0.4,
             }}
           />
         ))}
@@ -56,7 +56,7 @@ const HomePageTypesOfHiring = () => {
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.h2
-          className="text-4xl font-extrabold text-center mb-12 tracking-tight"
+          className="text-4xl font-bold text-center mb-12 leading-snug"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -77,28 +77,30 @@ const HomePageTypesOfHiring = () => {
             >
               <Card
                 sx={{
-                  bgcolor: 'rgba(30,41,59,0.85)',
-                  border: '1px solid rgba(255,255,255,0.05)',
+                  bgcolor: '#ffffffcc',
                   borderRadius: '1rem',
-                  boxShadow: '0 8px 30px rgba(0,0,0,0.3)',
-                  transition: 'all 0.4s ease-in-out',
+                  border: '1px solid #e0e7ff',
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.05)',
+                  transition: 'all 0.4s ease',
                   '&:hover': {
-                    boxShadow: '0 10px 40px rgba(0,0,0,0.5)',
-                    transform: 'translateY(-6px)',
+                    boxShadow: '0 14px 35px rgba(0,0,0,0.08)',
+                    transform: 'translateY(-4px)',
                   },
                 }}
               >
                 <CardContent>
                   <Box display="flex" gap={2} alignItems="flex-start">
-                    <div className="bg-blue-600 p-3 rounded-full shadow-md">{type.icon}</div>
+                    <div className="bg-sky-100 p-3 rounded-full shadow">
+                      {type.icon}
+                    </div>
                     <Box>
-                      <Typography variant="h6" className="text-white font-semibold mb-3">
+                      <Typography variant="h6" className="text-gray-800 font-semibold mb-3">
                         {type.title}
                       </Typography>
-                      <ul className="space-y-2 text-blue-100 text-sm">
+                      <ul className="space-y-2 text-gray-600 text-sm">
                         {type.details.map((detail, i) => (
                           <li key={i} className="flex items-start gap-2">
-                            <span className="text-green-400 mt-1">✔</span>
+                            <span className="text-green-500 mt-1">✔</span>
                             <span>{detail}</span>
                           </li>
                         ))}
