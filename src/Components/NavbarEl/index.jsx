@@ -46,7 +46,7 @@ const NavbarEl3 = () => {
   return (
     <>
       <nav className={`fixed w-full z-[1000] transition-all duration-300 ${isSticky ? 'bg-white shadow-md' : 'bg-white'}`}>
-        <div className="mx-auto flex items-center justify-between px-2 py-3 sm:px-4">
+        <div className="mx-auto flex items-center justify-between px-2 py-0 sm:px-4">
           <Link href="/">
             <img src="/logobbyy.svg" alt="brand-logo" className="w-24" />
           </Link>
