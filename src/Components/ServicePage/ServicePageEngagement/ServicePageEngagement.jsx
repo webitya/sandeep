@@ -18,7 +18,7 @@ const ServicePageEngagement = () => {
         "Dedicated project manager",
         "Weekly progress reports",
       ],
-      price: "Starting at ₹75,000",
+      price: "",
       popular: false,
     },
     {
@@ -31,7 +31,7 @@ const ServicePageEngagement = () => {
         "Priority support",
         "Customized growth roadmap",
       ],
-      price: "Starting at ₹1,50,000/month",
+      price: "",
       popular: true,
     },
   ]
