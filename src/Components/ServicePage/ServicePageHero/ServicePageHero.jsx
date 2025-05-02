@@ -19,14 +19,14 @@ const ServicePageHero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <motion.span
+          {/* <motion.span
             className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-indigo-100 uppercase bg-indigo-800/50 rounded-full border border-indigo-700/50 backdrop-blur-sm"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
           >
             Revenue Growth Experts
-          </motion.span>
+          </motion.span> */}
 
           <motion.h1
             className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight"
