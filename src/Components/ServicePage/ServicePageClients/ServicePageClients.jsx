@@ -28,7 +28,7 @@ const ServicePageClients = () => {
   }
 
   return (
-    <section className="py-20 md:py-28 bg-white relative">
+    <section className="py-10 md:py-10 bg-white relative">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500 to-transparent"></div>
@@ -43,9 +43,9 @@ const ServicePageClients = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-wider text-indigo-800 uppercase bg-indigo-50 rounded-full">
+          {/* <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-wider text-indigo-800 uppercase bg-indigo-50 rounded-full">
             Our Clients
-          </span>
+          </span> */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-5 tracking-tight">
             Who We Work With
           </h2>

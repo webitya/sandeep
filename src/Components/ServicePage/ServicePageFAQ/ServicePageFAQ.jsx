@@ -44,7 +44,7 @@ const ServicePageFAQ = () => {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50 relative">
+    <section className="py-10 md:py-10 bg-gradient-to-b from-white to-slate-50 relative">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-10 right-10 w-20 h-20 rounded-full border-4 border-indigo-100"></div>
@@ -59,10 +59,10 @@ const ServicePageFAQ = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-block bg-indigo-50 px-4 py-1.5 rounded-full mb-4">
+          {/* <div className="inline-block bg-indigo-50 px-4 py-1.5 rounded-full mb-4">
             <QuestionAnswerIcon sx={{ fontSize: 20, color: "#4f46e5", marginRight: "8px", verticalAlign: "middle" }} />
             <span className="text-indigo-800 font-medium text-sm">FAQs</span>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 tracking-tight">
             Frequently Asked Questions
           </h2>

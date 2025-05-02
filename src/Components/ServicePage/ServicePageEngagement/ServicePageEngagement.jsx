@@ -37,7 +37,7 @@ const ServicePageEngagement = () => {
   ]
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
+    <section className="py-10 md:py-10 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-indigo-50 opacity-70"></div>
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-indigo-50 opacity-70"></div>
@@ -50,10 +50,10 @@ const ServicePageEngagement = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-block bg-indigo-50 px-4 py-1.5 rounded-full mb-4">
+          {/* <div className="inline-block bg-indigo-50 px-4 py-1.5 rounded-full mb-4">
             <MenuBookIcon sx={{ fontSize: 20, color: "#4f46e5", marginRight: "8px", verticalAlign: "middle" }} />
             <span className="text-indigo-800 font-medium text-sm">Engagement Models</span>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 tracking-tight">
             How We Work With You
           </h2>
@@ -158,7 +158,7 @@ const ServicePageEngagement = () => {
           ))}
         </div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -182,7 +182,7 @@ const ServicePageEngagement = () => {
           >
             Compare Plans
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )

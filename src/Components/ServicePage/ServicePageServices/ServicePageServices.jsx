@@ -106,7 +106,7 @@ const ServicePageServices = () => {
   }
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-10 md:py-10 bg-gradient-to-b from-gray-100 to-slate-100">
       <div className="container mx-auto px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -115,14 +115,14 @@ const ServicePageServices = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <div className="inline-block bg-indigo-50 px-4 py-1.5 rounded-full mb-4">
+          {/* <div className="inline-block bg-indigo-50 px-4 py-1.5 rounded-full mb-4">
             <MenuBookIcon sx={{ fontSize: 20, color: "#4f46e5", marginRight: "8px", verticalAlign: "middle" }} />
             <span className="text-indigo-800 font-medium text-sm">Deep-Dive Into Each Service</span>
-          </div>
+          </div> */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-4 tracking-tight">
             Our Comprehensive Services
           </h2>
-          <div className="w-24 h-1 bg-indigo-600 mx-auto mb-6 rounded-full"></div>
+          <div className="w-24 h-1 bg-indigo-600 mx-auto mb-2 rounded-full"></div>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
             Tailored solutions to help you build, scale, and optimize your revenue teams
           </p>
@@ -133,7 +133,7 @@ const ServicePageServices = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="space-y-16"
+          className="space-y-10"
         >
           {services.map((service) => (
             <motion.div key={service.id} variants={item}>

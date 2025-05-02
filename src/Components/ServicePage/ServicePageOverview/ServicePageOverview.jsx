@@ -21,7 +21,7 @@ const ServicePageOverview = () => {
   }
 
   return (
-    <section className="py-20 md:py-28 bg-white relative">
+    <section className="py-10 md:py-10 bg-white relative">
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-indigo-50 to-transparent rounded-bl-full opacity-70"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-slate-50 to-transparent rounded-tr-full opacity-70"></div>
 
@@ -33,9 +33,9 @@ const ServicePageOverview = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-wider text-indigo-800 uppercase bg-indigo-50 rounded-full">
+            {/* <span className="inline-block px-4 py-1.5 mb-4 text-xs font-semibold tracking-wider text-indigo-800 uppercase bg-indigo-50 rounded-full">
               Our Services
-            </span>
+            </span> */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-5 tracking-tight">
               What We Offer
             </h2>
