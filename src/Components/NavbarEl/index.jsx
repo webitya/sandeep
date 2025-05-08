@@ -172,7 +172,7 @@ const NavbarEl3 = () => {
             ))}
 
             {/* CTA Button */}
-            <Link href="/adacemic" target="_blank">
+            <Link href="/academic" target="_blank">
               <Button
                 variant="contained"
                 size="small"
