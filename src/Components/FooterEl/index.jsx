@@ -46,7 +46,7 @@ const FooterEl = () => {
         <FooterColumn title="Get In Touch">
           {[
             ['Free Resources', '/free-resources'],
-            ['Blogs', '/blog'],
+            ['Blogs', '/blogs'],
             ['Case Studies', '/case-studies'],
             ['FAQs', '/faqs'],
             ['Contact Us', '/contact-us'],
