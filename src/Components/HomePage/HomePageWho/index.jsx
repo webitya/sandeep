@@ -30,9 +30,13 @@ const HomePageWho = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
           >
             <Typography variant="body1" className="text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-              At <strong>Sales Syllabus</strong>, we go beyond traditional hiring. We are your growth
-              partner — combining sales expertise, hiring strategy, and training into one powerful
-              solution for building high-performance sales teams.
+              We are a <strong>sales and marketing</strong> consulting company with over 7 years of experience helping businesses solve one of their biggest challenges — the sales and marketing talent crunch.
+            </Typography>
+             <Typography variant="body1" className="text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+             Having worked with 100+ clients across diverse industries, we have developed a proven, data-driven approach to building and managing high-performing sales and marketing teams that deliver maximum return on investment.
+            </Typography>
+              <Typography variant="body1" className="text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+             Our comprehensive solution combines strategic sales planning, KPI design, performance tracking systems, and skill gap analysis to ensure every team we build is aligned, accountable, and continuously improving.
             </Typography>
           </motion.div>
         </Box>

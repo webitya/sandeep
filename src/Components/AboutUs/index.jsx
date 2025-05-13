@@ -22,12 +22,14 @@ import AboutWhyChooseUs from './AboutWhyChooseUs';
 import AboutUsExperience from './AboutUsExperience';
 import AboutUsTimelineComponent from './AboutUsTimeline';
 import AboutUsCallToAction from './AboutUsCTA';
+import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 
 const navLinks = [
   { id: 'who-we-are', label: 'Who We Are', icon: <InfoIcon fontSize="small" /> },
   { id: 'our-vision', label: 'Our Vision', icon: <VisibilityIcon fontSize="small" /> },
-  { id: 'our-services', label: 'Our Services', icon: <BuildIcon fontSize="small" /> },
-  { id: 'why-choose-us', label: 'Why Choose Us', icon: <ThumbUpIcon fontSize="small" /> },
+  { id: 'what-we-do', label: 'What we do', icon: <WorkOutlineIcon fontSize="small" /> },
+  // { id: 'our-services', label: 'Our Services', icon: <BuildIcon fontSize="small" /> },
+  // { id: 'why-choose-us', label: 'Why Choose Us', icon: <ThumbUpIcon fontSize="small" /> },
   { id: 'experience', label: 'Experience', icon: <EmojiEventsIcon fontSize="small" /> },
   { id: 'timeline', label: 'Our Journey', icon: <TimelineIcon fontSize="small" /> },
   { id: 'call-to-action', label: 'Contact Us', icon: <PhoneInTalkIcon fontSize="small" /> },
@@ -104,11 +106,12 @@ export default function AboutUsPage() {
         <section id="who-we-are" className="mb-0 scroll-mt-0"><AboutUsWhoWeAre /></section>
         <section id="our-vision" className="mb-0 scroll-mt-0">
           <AboutUsOurVision />
-          <AboutUsWhatWeDo />
-          <AboutUsWhoWeWorkWith />
+          
         </section>
-        <section id="our-services" className="mb-0 scroll-mt-0"><AboutOurServicesSection /></section>
-        <section id="why-choose-us" className="mb-0 scroll-mt-0"><AboutWhyChooseUs /></section>
+         <section id="what-we-do" className="mb-0 scroll-mt-0"><AboutUsWhatWeDo />
+          <AboutUsWhoWeWorkWith /></section>
+        {/* <section id="our-services" className="mb-0 scroll-mt-0"><AboutOurServicesSection /></section> */}
+        {/* <section id="why-choose-us" className="mb-0 scroll-mt-0"><AboutWhyChooseUs /></section> */}
         <section id="experience" className="mb-0 scroll-mt-0"><AboutUsExperience /></section>
         <section id="timeline" className="mb-0 scroll-mt-0"><AboutUsTimelineComponent /></section>
         <section id="call-to-action" className="mb-0 scroll-mt-0"><AboutUsCallToAction /></section>

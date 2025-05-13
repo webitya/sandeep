@@ -6,11 +6,10 @@ import Image from "next/image"
 
 export default function MarketingSupportProblem() {
   const problems = [
-    "Disconnected marketing tools creating data silos",
-    "Difficulty measuring ROI across channels",
-    "Inefficient campaign management processes",
-    "Inability to personalize content at scale",
-    "Lack of real-time performance insights",
+    "B2B sales today is complex, multi-touch, and competitive",
+    "1:1 communication by client facing team limits the depth of value communication",
+    "Salespeople often lack time, data, or tools to articulate full impact",
+    "Critical content like ROI, case studies, differentiation often comes too late—or never",
   ]
 
   return (
@@ -27,7 +26,7 @@ export default function MarketingSupportProblem() {
             <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 to-transparent z-10 pointer-events-none"></div>
             <Image
               src="/placeholder.svg?height=800&width=1200"
-              alt="Marketing Challenges"
+              alt="Sales Communication Challenges"
               fill
               className="object-cover"
             />
@@ -40,18 +39,17 @@ export default function MarketingSupportProblem() {
             viewport={{ once: true, amount: 0.3 }}
             className="space-y-6"
           >
-            {/* <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800 mb-2">
-              Challenges
-            </div> */}
-
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Common Enterprise Marketing Challenges</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">The problems we are solving</h2>
 
             <p className="text-lg text-gray-700">
-              Today's enterprise marketers face numerous obstacles that prevent them from achieving their full
-              potential.
+              "Your sales team talks to the right prospects, but the right story is not always told.“
+              <br />
+              Sales teams often manage to get in front of the prospect, but during these short interactions — calls or
+              meetings — they typically only communicate 2–3 key points. That’s not enough to convey the full value,
+              use cases, and differentiation of your solution.
             </p>
 
-            <ul className="space-y-4 mt-8">
+            <ul className="space-y-2 mt-8">
               {problems.map((problem, index) => (
                 <motion.li
                   key={index}
@@ -59,7 +57,7 @@ export default function MarketingSupportProblem() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start bg-white p-4 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-200"
+                  className="flex items-start bg-white px-4 py-2 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all duration-200"
                 >
                   <span className="flex-shrink-0 mr-3 mt-1">
                     <ErrorOutlineIcon className="text-red-600 h-5 w-5" />

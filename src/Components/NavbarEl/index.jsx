@@ -38,7 +38,7 @@ const NavbarEl3 = () => {
   ];
 
   const menus1 = [
-    { label: 'Marketing Support', href: '/marketing-support' },
+    { label: 'Sales Story', href: '/sales-story-telling' },
     { label: 'Faqs', href: '/faqs' },
     { label: 'Contact Us', href: '/contact-us' }
   ];

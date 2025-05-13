@@ -29,11 +29,11 @@ export default function MarketingSupportHero() {
             </div> */}
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Enterprise Marketing <span className="text-blue-700">Solutions</span>
+              Sales Story  <span className="text-blue-700">Telling </span>
             </h1>
 
             <p className="text-lg md:text-xl text-gray-700 max-w-xl">
-              Streamline your marketing operations with our comprehensive platform designed for enterprise teams.
+             Turning your wins into decision-making moments 
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -44,7 +44,7 @@ export default function MarketingSupportHero() {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
               >
-                Get Started
+                Know More
                 <motion.div animate={{ x: isHovered ? 5 : 0 }} transition={{ duration: 0.2 }}>
                   <ArrowForwardIcon className="ml-2 h-5 w-5" />
                 </motion.div>

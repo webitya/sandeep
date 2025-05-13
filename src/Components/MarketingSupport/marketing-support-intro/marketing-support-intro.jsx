@@ -64,10 +64,10 @@ export default function MarketingSupportIntro() {
             {/* <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 mb-4">
               Our Platform
             </div> */}
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Enterprise Marketing Solutions</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">About sales Story telling </h2>
 
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our platform provides everything you need to excel in today's competitive business landscape.
+            <p className="text-lg text-gray-600  mx-auto">
+              we transforms complex B2B offerings into clear, compelling narratives designed to accelerate buyer decisions and maximize conversion. We partner closely with your sales and leadership teams to weave data, insights, and proven best practices into every touch point—ensuring your prospects not only hear your value but act on it
             </p>
           </motion.div>
         </div>
