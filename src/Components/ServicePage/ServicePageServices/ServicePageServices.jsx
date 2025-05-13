@@ -100,7 +100,7 @@ const ServicePageServices = () => {
 
   return (
     <section className="py-10 bg-gradient-to-b from-gray-100 to-slate-100">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

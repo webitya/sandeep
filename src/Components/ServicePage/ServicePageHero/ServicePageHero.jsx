@@ -95,9 +95,9 @@ const ServicePageHero = () => {
             className="w-full lg:w-1/2 flex justify-center"
           >
             <img
-              src="/service-hero.png" // Replace with your actual image path
+              src="/placeholder.svg" // Replace with your actual image path
               alt="Service Hero"
-              className="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-xl shadow-xl object-cover"
+              className="h-[350px] max-w-md md:max-w-lg lg:max-w-xl rounded-xl shadow-xl object-cover"
             />
           </motion.div>
         </div>
