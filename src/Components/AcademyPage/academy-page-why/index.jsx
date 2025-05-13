@@ -1,93 +1,70 @@
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+"use client"
 
-export default function Why() {
-  const benefits = [
-    {
-      title: "Industry-Leading Curriculum",
-      description:
-        "Our curriculum is designed by industry experts to ensure you learn the most relevant and in-demand skills.",
-    },
-    {
-      title: "Hands-On Learning",
-      description:
-        "Apply what you learn through real-world projects and build a portfolio that showcases your abilities.",
-    },
-    {
-      title: "Career Support",
-      description:
-        "Get personalized career coaching, resume reviews, and interview preparation to land your dream job.",
-    },
-    {
-      title: "Flexible Learning",
-      description:
-        "Learn at your own pace with our flexible schedule options, designed to fit around your life.",
-    },
-    {
-      title: "Community",
-      description:
-        "Join a supportive community of like-minded learners and build your professional network.",
-    },
-    {
-      title: "Recognized Certification",
-      description:
-        "Earn industry-recognized certifications that validate your skills to potential employers.",
-    },
-  ];
+import { motion } from "framer-motion"
+import Image from "next/image"
 
+export default function LeadershipImpactLight() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container px-4 md:px-6 mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose Our Academy</h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            We're committed to providing the highest quality education and support to help you succeed in your career.
-          </p>
-        </div>
+    <section className="relative py-24 bg-white overflow-hidden">
+      {/* Soft Decorative Background */}
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0">
+        <div className="absolute w-96 h-96 bg-blue-100 blur-3xl rounded-full top-[-60px] left-[-80px]"></div>
+        <div className="absolute w-80 h-80 bg-sky-100 blur-2xl rounded-full bottom-[-40px] right-[-60px]"></div>
+      </div>
 
-        {/* Benefits Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow bg-white"
-            >
-              <div className="flex items-start gap-4">
-                <CheckCircleIcon className="text-indigo-600 mt-1" fontSize="medium" />
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-2">{benefit.title}</h3>
-                  <p className="text-slate-600">{benefit.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* TEXT SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <span className="inline-block text-blue-500 font-semibold mb-3 tracking-wide uppercase text-sm">
+              Sales Syllabus Academy
+            </span>
 
-        {/* Statistics Section */}
-        <div className="mt-16 bg-indigo-50 rounded-2xl p-8 md:p-12">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Our Success in Numbers</h3>
-              <p className="text-slate-600 mb-6">
-                We're proud of the impact we've made on our students' careers and lives.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                { value: "95%", label: "Job placement rate" },
-                { value: "2,000+", label: "Graduates" },
-                { value: "300+", label: "Hiring partners" },
-                { value: "50%", label: "Average salary increase" },
-              ].map((stat, index) => (
-                <div key={index} className="text-center p-4 bg-white rounded-xl shadow-sm">
-                  <div className="text-3xl font-bold text-indigo-600 mb-1">{stat.value}</div>
-                  <div className="text-sm text-slate-600">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 leading-tight mb-6 relative inline-block">
+              <span className="relative z-10">Practical Leadership Learning for Real-World Impact</span>
+              <span className="absolute bottom-[-10px] left-0 w-full h-2 bg-blue-200 z-0 rounded"></span>
+            </h2>
+
+            <p className="text-slate-700 text-lg mb-4">
+           Sales Syllabus Academy is a leadership development platform designed for experienced professionals (10+ years in sales, marketing, or business) who aspire to enter top management roles.
+            </p>
+
+            <p className="text-slate-600 mb-4">
+          We offer a high-impact alternative to elite institutions like ISB, Harvard, and IIMs—delivering programs rooted in real market data, business demand, and hands-on consulting experience.
+            </p>
+
+            <p className="text-slate-600 mb-4">
+          Our 100% practical, simulation-based learning approach bridges the gap between theory and execution, helping professional’s master strategies that drive real business results.
+            </p>
+
+            <p className="text-xl font-medium text-blue-500 mt-6">
+              Learn. Earn. Lead—with Sales Syllabus Academy.
+            </p>
+          </motion.div>
+
+          {/* IMAGE SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-lg"
+          >
+            <Image
+              src="/leadership-concept.jpg" // Replace with your image
+              alt="Leadership Simulation"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-white/70 to-transparent z-10"></div>
+          </motion.div>
         </div>
       </div>
     </section>
-  );
+  )
 }

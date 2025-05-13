@@ -2,7 +2,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-indigo-50 to-white py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-indigo-50 to-white pt-24 md:py-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=800')] bg-center opacity-5 bg-no-repeat bg-cover"></div>
 
@@ -12,11 +12,10 @@ export default function Hero() {
           <div className="flex flex-col gap-6 text-center md:text-left">
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-4">
-                Unlock Your <span className="text-indigo-600">Career Potential</span>
+                Leadership <span className="text-indigo-600">Learning Platform</span>
               </h1>
               <p className="text-xl text-slate-600 max-w-[600px] mx-auto md:mx-0">
-                Join our academy and master the skills that will transform your future. Learn from industry experts and
-                build a career that matters.
+                Empowering organizations to make fewer mistakes and achieve faster success in sales, marketing, and business strategy.
               </p>
             </div>
 
@@ -45,7 +44,7 @@ export default function Hero() {
                 ))}
               </div>
               <p className="text-sm font-medium text-slate-600">
-                Join <span className="text-indigo-600 font-semibold">2,000+</span> students
+                Join <span className="text-indigo-600 font-semibold">2,000+</span> professionals
               </p>
             </div>
           </div>
@@ -55,7 +54,7 @@ export default function Hero() {
             <div className="aspect-video overflow-hidden rounded-2xl shadow-2xl relative">
               <img
                 src="/placeholder.svg?height=400&width=600"
-                alt="Academy overview"
+                alt="Leadership training overview"
                 className="h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-indigo-600/20 to-transparent"></div>

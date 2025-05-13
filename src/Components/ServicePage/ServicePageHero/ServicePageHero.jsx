@@ -13,85 +13,94 @@ const ServicePageHero = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center"
-        >
-          {/* <motion.span
-            className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-indigo-100 uppercase bg-indigo-800/50 rounded-full border border-indigo-700/50 backdrop-blur-sm"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.6 }}
-          >
-            Revenue Growth Experts
-          </motion.span> */}
-
-          <motion.h1
-            className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-          >
-            Sales & Marketing Growth Solutions Built for <span className="text-indigo-300">₹1–₹1,000 Cr</span> Companies
-          </motion.h1>
-
-          <motion.p
-            className="text-lg md:text-xl text-slate-200 mb-10 max-w-3xl mx-auto leading-relaxed"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-          >
-            We help you build, train, and optimize revenue teams that perform — with the perfect mix of strategy,
-            talent, and execution.
-          </motion.p>
-
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+          {/* LEFT - TEXT SECTION */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="w-full lg:w-1/2 text-center lg:text-left"
           >
-            <Button
-              variant="contained"
-              size="large"
-              endIcon={<ArrowForwardIcon />}
-              sx={{
-                backgroundColor: "#4f46e5",
-                "&:hover": { backgroundColor: "#4338ca" },
-                padding: "14px 28px",
-                borderRadius: "8px",
-                textTransform: "none",
-                fontSize: "16px",
-                fontWeight: "bold",
-                boxShadow: "0 10px 15px -3px rgba(79, 70, 229, 0.3)",
-              }}
+            <motion.h1
+              className="text-3xl md:text-4xl lg:text-4xl font-bold mb-6 leading-tight tracking-tight"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.8 }}
             >
-              Book a Free Discovery Call
-            </Button>
+              Sales & Marketing Growth Solutions Built for{" "}
+              <span className="text-indigo-300">₹1–₹1,000 Cr</span> Companies
+            </motion.h1>
 
-            <Button
-              variant="outlined"
-              size="large"
-              sx={{
-                borderColor: "rgba(255,255,255,0.3)",
-                color: "white",
-                padding: "14px 28px",
-                borderRadius: "8px",
-                textTransform: "none",
-                fontSize: "16px",
-                fontWeight: "bold",
-                "&:hover": {
-                  borderColor: "rgba(255,255,255,0.5)",
-                  backgroundColor: "rgba(255,255,255,0.05)",
-                },
-              }}
+            <motion.p
+              className="text-lg md:text-xl text-slate-200 mb-10 leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4, duration: 0.8 }}
             >
-              View Our Services
-            </Button>
+              We help you build, train, and optimize revenue teams that perform — with the perfect mix of strategy,
+              talent, and execution.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
+            >
+              <Button
+                variant="contained"
+                size="large"
+                endIcon={<ArrowForwardIcon />}
+                sx={{
+                  backgroundColor: "#4f46e5",
+                  "&:hover": { backgroundColor: "#4338ca" },
+                  padding: "14px 28px",
+                  borderRadius: "8px",
+                  textTransform: "none",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  boxShadow: "0 10px 15px -3px rgba(79, 70, 229, 0.3)",
+                }}
+              >
+                Book a Free Discovery Call
+              </Button>
+
+              <Button
+                variant="outlined"
+                size="large"
+                sx={{
+                  borderColor: "rgba(255,255,255,0.3)",
+                  color: "white",
+                  padding: "14px 28px",
+                  borderRadius: "8px",
+                  textTransform: "none",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  "&:hover": {
+                    borderColor: "rgba(255,255,255,0.5)",
+                    backgroundColor: "rgba(255,255,255,0.05)",
+                  },
+                }}
+              >
+                View Our Services
+              </Button>
+            </motion.div>
           </motion.div>
-        </motion.div>
+
+          {/* RIGHT - IMAGE SECTION */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="w-full lg:w-1/2 flex justify-center"
+          >
+            <img
+              src="/service-hero.png" // Replace with your actual image path
+              alt="Service Hero"
+              className="w-full max-w-md md:max-w-lg lg:max-w-xl rounded-xl shadow-xl object-cover"
+            />
+          </motion.div>
+        </div>
       </div>
 
       {/* Bottom wave shape */}

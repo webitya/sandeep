@@ -6,18 +6,23 @@ import Roles from "./academy-page-roles"
 import Testimonials from "./academy-page-testimonials"
 import Assessment from "./academy-page-assessment"
 import CTA from "./academy-page-cta"
+import AcademyNextPhaseProgram from "./academy-next-phase"
+import AcademyCareerTracks from "./academy-career-track"
 
 export default function AcademyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100">
       <Hero />
       <Why />
-      <WhoFor />
-      <HowItWorks />
-      <Roles />
-      <Testimonials />
-      <Assessment />
-      <CTA />
+     
+      <AcademyNextPhaseProgram/>
+      <AcademyCareerTracks/>
+       <WhoFor />
+      {/* <HowItWorks /> */}
+      {/* <Roles /> */}
+      {/* <Testimonials /> */}
+      {/* <Assessment /> */}
+      {/* <CTA /> */}
     </div>
   )
 }
