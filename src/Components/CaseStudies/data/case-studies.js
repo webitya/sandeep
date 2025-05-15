@@ -230,7 +230,7 @@ export const caseStudies = [
 },
   // {
   //   id: 5,
-  //   title: "Healthcare Patient Portal",
+  //   title: "Healthcare Patient Portal Ok",
   //   description: "A secure, HIPAA-compliant patient portal that enables seamless communication between patients and healthcare providers, appointment scheduling, and access to medical records.",
   //   industry: "Healthcare",
   //   client: "Regional Healthcare Network",
