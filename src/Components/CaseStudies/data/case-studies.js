@@ -1,344 +1,262 @@
 export const caseStudies = [
-  {
-    id: 1,
-    title: "E-Commerce Platform Redesign",
-    description: "A complete overhaul of an outdated e-commerce platform for a retail client, focusing on improving user experience, mobile responsiveness, and conversion rates.",
-    overview: "Our client, a leading retailer with over 50 physical stores, was struggling with an outdated e-commerce platform that was losing market share to competitors. We partnered with them to completely redesign their online shopping experience, focusing on modern design principles, mobile optimization, and streamlined checkout processes.",
-    industry: "Retail",
-    client: "Major National Retailer",
-    duration: "3 months",
-    timeline: "January 2024 - March 2024",
-    teamSize: "8 specialists",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["UX/UI Design", "E-commerce", "Mobile Optimization"],
-    services: ["UX/UI Design", "Web Development", "Performance Optimization", "Analytics Integration"],
-    technologies: ["Next.js", "Tailwind CSS", "Stripe", "Algolia", "Sanity CMS"],
-    challenge: "The client's existing e-commerce platform was outdated, difficult to navigate, and not mobile-friendly. This resulted in high bounce rates, abandoned carts, and declining sales. The platform also suffered from slow load times and poor search functionality, making it difficult for customers to find products.",
-    challengeDetails: [
-      "Outdated design with poor user experience",
-      "Non-responsive interface with 65% mobile abandonment rate",
-      "Slow page load times (average 6.2 seconds)",
-      "Complex checkout process with 78% cart abandonment",
-      "Limited product discovery and search capabilities"
-    ],
-    solution: "We conducted extensive user research and competitive analysis to redesign the entire shopping experience. The new platform features a clean, intuitive interface, advanced search and filtering, streamlined checkout, and responsive design for all devices.",
-    solutionDetails: [
-      {
-        title: "User-Centered Design",
-        description: "Conducted user research with 200+ customers to create intuitive navigation and shopping flows"
-      },
-      {
-        title: "Mobile-First Approach",
-        description: "Designed responsive interfaces that work seamlessly across all device sizes"
-      },
-      {
-        title: "Performance Optimization",
-        description: "Implemented image optimization, code splitting, and caching strategies to improve load times"
-      },
-      {
-        title: "Streamlined Checkout",
-        description: "Reduced checkout steps from 5 to 2 with guest checkout and multiple payment options"
-      }
-    ],
-    implementation: "We used an agile development approach with two-week sprints and regular client feedback sessions. The project was divided into three phases: discovery and planning, design and development, and testing and optimization.",
-    results: [
-      "50% increase in page load speed",
-      "30% improvement in conversion rate",
-      "25% reduction in cart abandonment",
-      "42% increase in mobile transactions",
-      "65% improvement in search relevance"
-    ],
-    businessImpact: [
-      "35% increase in online revenue within first quarter",
-      "Customer satisfaction score improved from 3.2 to 4.7/5",
-      "Expanded market reach with 28% new customers",
-      "Reduced customer support inquiries by 40%"
-    ],
-    roi: "The platform redesign achieved ROI within 4 months, with a 35% increase in online revenue and significant reduction in operational costs.",
-    testimonial: {
-      quote: "The redesigned platform has completely transformed our online business. The user experience is exceptional, and the results speak for themselves with significant increases in sales and customer satisfaction.",
-      author: "Sarah Johnson",
-      position: "VP of Digital Commerce, Major National Retailer"
+{
+  id: 1,
+  title: "Sales Team Building",
+  description: "How we helped IT companies build a productive sales team by implementing structured recruitment, KPI setup, and management dashboards.",
+  overview: "Our clients, including Oracle Partners, SAP Partners, and various IT product companies with less than 75 employees, were struggling to build and scale their sales and marketing teams across locations such as Maharashtra, Hyderabad, Ahmedabad, New Delhi, and Nagpur. Their business involved selling ERP, software services, and digital marketing. We partnered with them to establish a data-driven culture, standardized processes, and a productive sales team.",
+  industry: "IT Services & Software",
+  client: "Oracle Partners, SAP Partners, IT Product Companies",
+  duration: "3 months",
+  timeline: "Not specified",
+  teamSize: "Not specified",
+  imageUrl: "/1-mi.jpeg",
+  tags: ["Sales Team Building", "KPI Management", "Recruitment Strategy", "Data-Driven Culture"],
+  services: ["Sales Talent Management", "Recruitment", "KPI/OKR Setup", "Support Desk Implementation"],
+  technologies: ["ApexCharts", "Ant Design", "React"],
+  challenge: "Clients were unable to build or scale sales and marketing teams effectively, with no standardized processes or measurable performance metrics, leading to inefficiencies and blame games.",
+  challengeDetails: [
+    "Unable to build a sales and marketing team",
+    "Scaling sales operations was challenging",
+    "Efforts were unmeasured causing blame culture",
+    "No processes to address issues promptly",
+    "Unmeasurable company culture and lack of standardization"
+  ],
+  solution: "Implemented a multi-step approach including audits, KPI/OKR setup, customized recruitment strategy, sales talent management, and a support desk to resolve issues quickly, supported by dashboards to monitor performance.",
+  solutionDetails: [
+    {
+      title: "Audit",
+      description: "Conducted audit to identify gaps in sales team building."
+    },
+    {
+      title: "KPI/OKR Setup",
+      description: "Defined and set up key performance indicators and objectives for the sales team."
+    },
+    {
+      title: "Recruitment Strategy",
+      description: "Developed a customized recruitment strategy focused on the client's specific needs."
+    },
+    {
+      title: "Sales Talent Management & Support Desk",
+      description: "Managed sales talent recruitment and implemented a support desk to quickly resolve team issues."
     }
-  },
-  {
-    id: 2,
-    title: "Analytics Dashboard Redesign",
-    description: "A comprehensive redesign of a SaaS analytics dashboard to improve data visualization, user experience, and decision-making capabilities for enterprise clients.",
-    industry: "Technology",
-    client: "Enterprise SaaS Provider",
-    duration: "4 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Data Visualization", "UX/UI Design", "SaaS"],
-    services: ["UX/UI Design", "Frontend Development", "Data Visualization"],
-    technologies: ["React", "D3.js", "Tailwind CSS", "GraphQL", "AWS"],
-    challenge: "The client's existing analytics dashboard was cluttered, slow, and difficult to navigate. Users struggled to find important metrics and generate meaningful reports, leading to low adoption rates and customer churn.",
-    solution: "We conducted extensive user research with data analysts and decision-makers to understand their workflows and pain points. The redesigned dashboard features customizable widgets, advanced filtering, improved data visualization, and streamlined report generation.",
-    results: [
-      "68% increase in user engagement",
-      "42% increase in report generation",
-      "75% reduction in dashboard load time",
-      "32% improvement in customer retention"
-    ],
-    businessImpact: [
-      "Customer retention improved by 32%",
-      "Support tickets related to dashboard reduced by 45%",
-      "Enterprise plan upgrades increased by 28%",
-      "Net Promoter Score improved from 34 to 72"
-    ],
-    testimonial: {
-      quote: "The new dashboard has transformed how our customers interact with their data. What used to take multiple steps and confusion is now intuitive and fast. Our customers are discovering insights they never knew existed in their data.",
-      author: "Michael Chen",
-      position: "Chief Product Officer, Enterprise SaaS Provider"
-    }
-  },
-  {
-    id: 3,
-    title: "Mobile Banking App",
-    description: "A modern, secure mobile banking application designed to provide customers with seamless access to their accounts, transactions, and financial services on the go.",
-    industry: "Finance",
-    client: "Regional Banking Institution",
-    duration: "6 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Mobile App", "Banking", "Security"],
-    services: ["Mobile App Development", "UX/UI Design", "Security Implementation", "API Integration"],
-    technologies: ["React Native", "Node.js", "AWS", "Plaid API", "Biometric Authentication"],
-    challenge: "The client, a regional bank, needed to modernize their digital banking experience to meet customer expectations and compete with fintech startups. Their existing mobile app was outdated, had limited functionality, and received poor user reviews.",
-    solution: "We developed a comprehensive mobile banking solution with a focus on security, usability, and performance. The app features biometric authentication, real-time transaction monitoring, budgeting tools, and seamless integration with the bank's core systems.",
-    results: [
-      "Over 100,000 downloads in the first month",
-      "4.8/5 average rating on app stores",
-      "85% reduction in app crashes",
-      "40% faster transaction processing"
-    ],
-    businessImpact: [
-      "62% increase in mobile banking adoption",
-      "35% reduction in branch transaction costs",
-      "28% increase in customer satisfaction scores",
-      "15% growth in new account openings"
-    ],
-    testimonial: {
-      quote: "The new mobile banking app has transformed how our customers interact with our bank. The intuitive design and robust feature set have exceeded our expectations and positioned us as a digital leader in our market.",
-      author: "Jennifer Martinez",
-      position: "Chief Digital Officer, Regional Banking Institution"
-    }
-  },
-  {
-    id: 4,
-    title: "Global E-Learning Platform",
-    description: "A comprehensive e-learning platform designed to deliver educational content to students worldwide, with support for multiple languages, payment systems, and learning formats.",
-    industry: "Education",
-    client: "International Educational Institution",
-    duration: "8 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["E-Learning", "Internationalization", "Content Delivery"],
-    services: ["Web Application Development", "Content Management", "Localization", "Payment Integration"],
-    technologies: ["Next.js", "MongoDB", "AWS", "Stripe", "Video.js"],
-    challenge: "An educational institution needed to expand its reach globally by creating an online learning platform that could deliver courses to students worldwide. The platform needed to support multiple languages, payment methods, and provide an engaging learning experience across different devices.",
-    solution: "We developed a scalable, cloud-based e-learning platform with a focus on accessibility, internationalization, and interactive learning experiences. The platform includes course creation tools, student progress tracking, assessment capabilities, and robust analytics for educators.",
-    results: [
-      "Over 500,000 registered students in first year",
-      "Expanded to 12 languages from initial 3",
-      "Course library grew from 50 to 300+ courses",
-      "95% platform uptime during peak usage periods"
-    ],
-    businessImpact: [
-      "87% course completion rate (industry avg: 65%)",
-      "92% of students reported improved knowledge",
-      "Partnerships with 15 universities worldwide",
-      "42% of students accessed content on mobile devices"
-    ],
-    testimonial: {
-      quote: "This platform has revolutionized how we deliver education globally. The technical capabilities, combined with the intuitive user experience, have allowed us to reach students we never could before. The analytics have also given us unprecedented insights into learning patterns and content effectiveness.",
-      author: "Dr. Robert Williams",
-      position: "Director of Digital Learning, International Educational Institution"
-    }
-  },
-  {
-    id: 5,
-    title: "Healthcare Patient Portal",
-    description: "A secure, HIPAA-compliant patient portal that enables seamless communication between patients and healthcare providers, appointment scheduling, and access to medical records.",
-    industry: "Healthcare",
-    client: "Regional Healthcare Network",
-    duration: "7 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Healthcare", "Patient Experience", "HIPAA Compliance"],
-    services: ["Web Application Development", "Mobile App Development", "Security Implementation", "Integration Services"],
-    technologies: ["React", "Node.js", "PostgreSQL", "FHIR API", "AWS"],
-    challenge: "The healthcare network needed to improve patient engagement and streamline administrative processes while ensuring strict compliance with privacy regulations. Their existing systems were fragmented, leading to poor patient experience and inefficient workflows.",
-    solution: "We developed an integrated patient portal that provides a unified interface for patients to manage appointments, communicate with providers, access medical records, and handle payments. The system integrates with existing EHR systems and prioritizes security and compliance.",
-    results: [
-      "65% increase in patient portal adoption",
-      "40% reduction in appointment no-shows",
-      "30% decrease in call center volume",
-      "90% of patients rated the portal as 'easy to use'"
-    ],
-    businessImpact: [
-      "Annual savings of $1.2M in administrative costs",
-      "Improved patient satisfaction scores by 35%",
-      "Reduced average wait time for appointments by 25%",
-      "Increased patient retention by 18%"
-    ],
-    testimonial: {
-      quote: "The patient portal has transformed our relationship with patients and significantly improved our operational efficiency. Patients appreciate the convenience, and our staff can focus more on providing care rather than administrative tasks.",
-      author: "Dr. Emily Rodriguez",
-      position: "Chief Medical Information Officer, Regional Healthcare Network"
-    }
-  },
-  {
-    id: 6,
-    title: "Supply Chain Management System",
-    description: "An end-to-end supply chain management system that provides real-time visibility, predictive analytics, and process automation for a global manufacturing company.",
-    industry: "Manufacturing",
-    client: "Global Manufacturing Corporation",
-    duration: "10 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Supply Chain", "IoT", "Predictive Analytics"],
-    services: ["Enterprise Software Development", "IoT Integration", "Data Analytics", "Process Automation"],
-    technologies: ["Java", "Spring Boot", "React", "Kafka", "TensorFlow", "Azure"],
-    challenge: "The manufacturing company was struggling with supply chain disruptions, inventory management issues, and lack of visibility across their global operations. This resulted in production delays, excess inventory costs, and customer dissatisfaction.",
-    solution: "We implemented a comprehensive supply chain management system that integrates data from multiple sources, provides real-time visibility, and leverages AI for predictive analytics. The system includes IoT integration for asset tracking, automated procurement processes, and advanced reporting capabilities.",
-    results: [
-      "85% improvement in supply chain visibility",
-      "30% reduction in inventory holding costs",
-      "45% decrease in stockouts",
-      "60% faster response to supply chain disruptions"
-    ],
-    businessImpact: [
-      "Annual cost savings of $4.5M",
-      "On-time delivery rate improved from 82% to 96%",
-      "Production efficiency increased by 22%",
-      "Customer satisfaction scores improved by 28%"
-    ],
-    testimonial: {
-      quote: "This system has given us unprecedented visibility and control over our global supply chain. We can now predict and mitigate disruptions before they impact production, optimize inventory levels, and make data-driven decisions that directly improve our bottom line.",
-      author: "Thomas Wilson",
-      position: "VP of Supply Chain Operations, Global Manufacturing Corporation"
-    }
-  },
-  {
-    id: 7,
-    title: "AI-Powered Customer Service Platform",
-    description: "An intelligent customer service platform that combines chatbots, sentiment analysis, and agent assistance tools to improve response times and customer satisfaction.",
-    industry: "Technology",
-    client: "Enterprise Software Company",
-    duration: "6 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["AI", "Customer Service", "NLP"],
-    services: ["AI Development", "Integration Services", "UX/UI Design", "Data Analytics"],
-    technologies: ["Python", "TensorFlow", "React", "Node.js", "MongoDB", "AWS"],
-    challenge: "The client was experiencing increasing customer service volumes, long response times, and inconsistent service quality. Their existing tools couldn't handle the complexity of customer inquiries, leading to customer frustration and agent burnout.",
-    solution: "We developed an AI-powered customer service platform that uses natural language processing to understand customer inquiries, route them appropriately, and provide agents with relevant information and suggested responses. The system also includes sentiment analysis to identify at-risk customers and a self-service portal for common issues.",
-    results: [
-      "70% of inquiries resolved by AI without human intervention",
-      "Average response time reduced from 24 hours to 2 hours",
-      "Customer satisfaction scores increased by 35%",
-      "Agent productivity improved by 40%"
-    ],
-    businessImpact: [
-      "Reduced customer service operational costs by 30%",
-      "Increased customer retention by 15%",
-      "Improved agent satisfaction and reduced turnover by 25%",
-      "Gained valuable insights from customer interaction data"
-    ],
-    testimonial: {
-      quote: "The AI-powered platform has revolutionized our customer service operations. Our agents are more productive and satisfied, our customers receive faster and more accurate responses, and we've significantly reduced our operational costs. It's been a game-changer for our business.",
-      author: "Lisa Thompson",
-      position: "Customer Experience Director, Enterprise Software Company"
-    }
-  },
-  {
-    id: 8,
-    title: "Blockchain-Based Supply Chain Verification",
-    description: "A blockchain solution that provides end-to-end traceability and verification for a luxury goods manufacturer, ensuring product authenticity and ethical sourcing.",
-    industry: "Retail",
-    client: "Luxury Goods Manufacturer",
-    duration: "9 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Blockchain", "Supply Chain", "Authentication"],
-    services: ["Blockchain Development", "Mobile App Development", "IoT Integration", "Consulting"],
-    technologies: ["Ethereum", "Solidity", "React Native", "Node.js", "RFID", "AWS"],
-    challenge: "The luxury goods manufacturer was facing increasing concerns about counterfeit products and needed to provide customers with verifiable proof of authenticity and ethical sourcing. Traditional methods were costly, inefficient, and vulnerable to tampering.",
-    solution: "We implemented a blockchain-based verification system that tracks products from raw materials to retail. Each product receives a unique digital identity stored on the blockchain, accessible to customers via a mobile app that scans a QR code or NFC tag. The system integrates with existing supply chain processes and provides a transparent record of each product's journey.",
-    results: [
-      "100% of products now traceable from source to consumer",
-      "Counterfeit incidents reduced by 98%",
-      "80% of customers actively verify product authenticity",
-      "Ethical sourcing claims independently verifiable"
-    ],
-    businessImpact: [
-      "Brand value increased by 15% based on consumer trust metrics",
-      "Premium pricing supported by verifiable authenticity",
-      "New market access due to proven ethical sourcing",
-      "Reduced insurance costs related to counterfeit claims"
-    ],
-    testimonial: {
-      quote: "This blockchain solution has transformed how we demonstrate the authenticity and provenance of our products. Our customers now have complete confidence in what they're purchasing, and we've seen a significant impact on our brand reputation and bottom line.",
-      author: "Alexandre Dubois",
-      position: "Chief Innovation Officer, Luxury Goods Manufacturer"
-    }
-  },
-  {
-    id: 9,
-    title: "Smart City Traffic Management System",
-    description: "An intelligent traffic management system that uses IoT sensors, AI, and real-time data analytics to optimize traffic flow, reduce congestion, and improve public transportation efficiency.",
-    industry: "Government",
-    client: "Metropolitan Transportation Authority",
-    duration: "12 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Smart City", "IoT", "AI", "Transportation"],
-    services: ["IoT Development", "AI Implementation", "Data Analytics", "System Integration"],
-    technologies: ["Python", "TensorFlow", "Kafka", "MongoDB", "AWS", "IoT Sensors"],
-    challenge: "The metropolitan area was experiencing severe traffic congestion, inefficient public transportation, and increasing air pollution. Existing traffic management systems were outdated and unable to adapt to changing traffic patterns.",
-    solution: "We developed a comprehensive smart traffic management system that collects real-time data from various sources including traffic cameras, IoT sensors, public transportation vehicles, and mobile apps. The system uses AI to predict traffic patterns, optimize signal timing, and provide real-time information to transportation authorities and citizens.",
-    results: [
-      "Average commute time reduced by 23%",
-      "Traffic congestion decreased by 30% in key areas",
-      "Public transportation on-time performance improved by 35%",
-      "Emergency vehicle response time reduced by 45%"
-    ],
-    businessImpact: [
-      "Annual fuel savings of approximately $15M for the city",
-      "Carbon emissions reduced by 22%",
-      "Public transportation ridership increased by 18%",
-      "Citizen satisfaction with transportation improved by 40%"
-    ],
-    testimonial: {
-      quote: "This smart traffic management system has transformed mobility in our city. We've seen significant improvements in traffic flow, public transportation efficiency, and overall quality of life for our citizens. The data-driven approach has also enabled us to make better infrastructure investment decisions.",
-      author: "James Peterson",
-      position: "Director, Metropolitan Transportation Authority"
-    }
-  },
-  {
-    id: 10,
-    title: "Digital Transformation for Insurance Claims",
-    description: "A comprehensive digital transformation of the claims processing workflow for a major insurance provider, reducing processing time and improving customer satisfaction.",
-    industry: "Finance",
-    client: "National Insurance Provider",
-    duration: "8 months",
-    imageUrl: "/placeholder.svg?height=800&width=1200",
-    tags: ["Insurance", "Process Automation", "Digital Transformation"],
-    services: ["Process Reengineering", "Software Development", "Mobile App Development", "AI Implementation"],
-    technologies: ["React", "Node.js", "PostgreSQL", "TensorFlow", "AWS", "OCR"],
-    challenge: "The insurance provider's claims process was largely manual, paper-based, and time-consuming. This resulted in long processing times, high operational costs, and customer frustration. The company was losing market share to more digitally advanced competitors.",
-    solution: "We implemented a complete digital transformation of the claims process, including a mobile app for customers to submit claims with photos and documentation, automated damage assessment using AI and computer vision, digital document processing with OCR, and a streamlined approval workflow. The system integrates with existing databases and provides real-time status updates to customers and adjusters",
-
-    results: [
-      "Claims processing time reduced from 15 days to 2 days",
-      "70% of claims processed without human intervention",
-      "Customer satisfaction with claims process improved by 65%",
-      "Fraud detection accuracy increased by 40%"
-    ],
-    businessImpact: [
-      "Operational costs reduced by $12M annually",
-      "Adjuster capacity increased by 300% without additional hiring",
-      "Customer retention improved by 25%",
-      "Competitive advantage in market with fastest claims processing"
-    ],
-    testimonial: {
-      quote: "The digital transformation of our claims process has exceeded all expectations. We've dramatically improved customer satisfaction while significantly reducing costs. What used to take weeks now takes hours, and our adjusters can focus on complex cases rather than routine paperwork.",
-      author: "Patricia Reynolds",
-      position: "Chief Claims Officer, National Insurance Provider"
-    }
+  ],
+  implementation: "The project was executed through a phased approach starting with audits, followed by KPI and recruitment setups, while simultaneously creating management dashboards and support mechanisms to track and solve challenges efficiently.",
+  results: [
+    "Improved management of the sales team",
+    "Less than 48 hours turnaround for resolving challenges",
+    "Established an information dashboard for team management",
+    "Created a data-driven culture in sales operations"
+  ],
+  businessImpact: [
+    "Reduced internal hiring costs with managed per-hire cost lower than internal cost",
+    "Faster issue resolution improving team productivity",
+    "Standardized processes enhancing company culture",
+    "Overall increase in sales team efficiency"
+  ],
+  roi: "Cost-benefit analysis showed managed per-hire costs were lower than internal costs, resulting in substantial savings and improved operational efficiency.",
+  testimonial: {
+    quote: "This structured approach transformed our sales team's productivity and established a culture of accountability and data-driven decision making.",
+    author: "Anonymous Client",
+    position: "Sales Director, IT Companies"
   }
+}
+,
+{id: 2,
+  title: "Lead Generation for SAP and Oracle Partners",
+  description: "How we helped top SAP and Oracle partners achieve their sales targets by optimizing marketing budget allocation and improving sales processes.",
+  overview: "Our client, a leading organization representing SAP and Oracle partners, was unable to meet sales targets despite adequate budget and marketing spend. We conducted a thorough audit revealing misallocated budgets and ineffective marketing channels. We partnered with them to implement a focused omnichannel marketing strategy and enhanced sales team management to improve lead generation and sales closures.",
+  industry: "IT Services & Software Partners",
+  client: "SAP and Oracle Partner Organizations",
+  duration: "Not specified",
+  timeline: "Not specified",
+  teamSize: "Not specified",
+  imageUrl: "/2-mi.jpeg",
+  tags: ["Lead Generation", "Marketing Strategy", "Sales Improvements", "Budget Optimization"],
+  services: ["Marketing Audit", "Omnichannel Marketing Strategy", "Sales Team Recruitment", "Performance Management Systems"],
+  technologies: ["ApexCharts", "Ant Design", "React"],
+  challenge: "Despite having a sufficient marketing budget, the organization was not achieving its sales targets due to misallocation of budget and lack of measurable performance indicators.",
+  challengeDetails: [
+    "Ineffective budget allocation across marketing channels",
+    "Lack of measurable activities and actionable insights",
+    "Untracked sales efforts leading to inefficiencies",
+    "Slow problem-solving in sales team",
+    "Poor coordination between marketing and sales"
+  ],
+  solution: "Conducted an audit of sales and marketing spend, identified budget misallocations, built a low-leakage omnichannel marketing strategy focusing on telemarketing, webinars, and events, and implemented sales team recruitment with performance management systems.",
+  solutionDetails: [
+    {
+      title: "Audit",
+      description: "Audited sales and marketing spend and KPIs to identify inefficiencies."
+    },
+    {
+      title: "Marketing Strategy",
+      description: "Built a comprehensive, low-leakage omnichannel marketing plan targeting the ideal customer profile with budget allocation across effective channels."
+    },
+    {
+      title: "Sales Team Recruitment & Support",
+      description: "Recruited and onboarded sales team members and provided ongoing support including query resolution and performance tracking."
+    },
+    {
+      title: "Performance Management",
+      description: "Set up systems to measure marketing and sales activities for continuous improvement."
+    }
+  ],
+  implementation: "Implemented the plan in phases: audit and findings, marketing strategy deployment, sales team recruitment, and performance tracking, with regular reviews to optimize outcomes.",
+  results: [
+    "All marketing activities became measurable",
+    "Organization gained actionable insights",
+    "Increased number of quality leads",
+    "Improved tracking and support for sales team",
+    "Reduced problem-solving time and increased closures"
+  ],
+  businessImpact: [
+    "More efficient marketing spend with optimized budget allocation",
+    "Higher lead conversion rates",
+    "Better alignment between marketing and sales",
+    "Increased overall sales performance"
+  ],
+  roi: "Optimized marketing spend and sales improvements led to better lead generation and faster achievement of sales targets, enhancing overall ROI.",
+  testimonial: {
+    quote: "The focused marketing strategy and sales team improvements made a significant impact on our lead generation and sales targets. The insights provided allowed us to optimize every dollar spent.",
+    author: "Anonymous Client",
+    position: "Sales Manager, SAP/Oracle Partner"
+  }
+},
+
+  {
+  id: 3,
+  title: "Reducing the Bounce Rate in Tele-calling Process",
+  description: "How we helped manufacturing and IT product companies reduce bounce rates and improve meeting ratios through better communication and system improvements.",
+  overview: "Our client, a company operating in manufacturing and IT products across Maharashtra and Telangana, was facing high bounce rates in their telemarketing and inside sales processes. We audited their approach, identified communication and motivation gaps, and implemented training along with workflow and performance management tools, resulting in significant improvement in meeting ratios and business communication.",
+  industry: "Manufacturing, IT Products & Services",
+  client: "Mid-sized Manufacturing and IT Companies",
+  duration: "Not specified",
+  timeline: "Not specified",
+  teamSize: "Not specified",
+  imageUrl: "/3-mi.jpeg",
+  tags: ["Tele-calling", "Business Communication", "Sales Training", "Performance Management"],
+  services: ["Audit and Assessment", "Communication Training", "Workflow Optimization", "Performance Monitoring"],
+  technologies: ["ApexCharts", "Ant Design", "React"],
+  challenge: "High bounce rate in telemarketing and inside sales calls, caused by untrained and unmotivated teams using generic scripts and lacking process clarity.",
+  challengeDetails: [
+    "Team not trained to handle objections",
+    "Generic and ineffective communication",
+    "Inability to ask relevant questions during calls",
+    "Poor capture of information from calls",
+    "Lack of organized workflow and motivation"
+  ],
+  solution: "Conducted a detailed audit of calling scripts and processes, trained the team on business communication, developed a communication document, provided call tracking tools, and set up performance monitoring and feedback systems.",
+  solutionDetails: [
+    {
+      title: "Business Communication Training",
+      description: "Created a business communication document and trained the sales team for effective interactions."
+    },
+    {
+      title: "Tools and Systems Implementation",
+      description: "Provided call tracking and management tools, organized workflows, and performance analytics."
+    }
+  ],
+  implementation: "Implemented improvements in two phases: business communication enhancement and deployment of tools and performance management systems, with continuous feedback loops.",
+  results: [
+    "Significant improvement in meeting ratios over 5 weeks",
+    "Enhanced business communication among tele-calling teams",
+    "Better tracking and management of telemarketing efforts",
+    "Increased motivation and structure within the sales team"
+  ],
+  businessImpact: [
+    "Reduced bounce rate in tele-calling process",
+    "Improved lead conversion through higher meeting rates",
+    "More efficient inside sales operations",
+    "Stronger team coordination and accountability"
+  ],
+  roi: "Improved meeting ratios led to more qualified leads and higher sales conversion potential, reducing wasted calls and increasing ROI on telemarketing efforts.",
+  testimonial: {
+    quote: "The training and new tools transformed our tele-calling process. We saw measurable improvements in meeting ratios quickly.",
+    author: "Anonymous Client",
+    position: "Sales Manager, Manufacturing Sector"
+  }
+},
+ {
+  id: 4,
+  title: "Building a Sales and Marketing Team",
+  description: "Helping organizations hire and build high-performing sales teams with optimized recruitment and support systems.",
+  overview: "Many organizations with under 200 employees across multiple locations struggled with hiring and retaining effective salespeople. We audited their recruitment, screening, and post-hiring support processes, identified key gaps such as unconscious bias and unrealistic leadership expectations, and implemented tailored recruitment strategies alongside robust support and performance management systems, resulting in a highly effective sales and marketing team.",
+  industry: "Multiple Industries",
+  client: "Organizations under 200 employees",
+  duration: "Not specified",
+  timeline: "Not specified",
+  teamSize: "Not specified",
+  imageUrl: "/4-mi.jpeg",
+  tags: ["Sales Recruitment", "Performance Management", "Talent Management", "Hiring Process"],
+  services: ["Audit and Assessment", "Recruitment Strategy", "Screening Process Design", "Support System Implementation"],
+  technologies: ["ApexCharts", "Ant Design", "React"],
+  challenge: "Organizations faced difficulties hiring good salespeople and had low-performing sales teams due to poor recruitment and inadequate support systems.",
+  challengeDetails: [
+    "Generic hiring approach with unconscious bias",
+    "Lack of scientific screening methods",
+    "Insufficient post-hiring support and slow problem resolution",
+    "Unrealistic expectations from leadership without system building",
+    "High cost and attrition of sales talent"
+  ],
+  solution: "Defined recruitment strategy with clear Ideal Customer Profile (ICP), developed sourcing channels, designed customized screening, and implemented performance management and support systems to address talent crunch.",
+  solutionDetails: [
+    {
+      title: "Hiring Process Optimization",
+      description: "Developed a strategic recruitment plan, screening process, and sourcing channels."
+    },
+    {
+      title: "Support Systems Implementation",
+      description: "Established support frameworks and reporting tools for leadership and sales teams."
+    }
+  ],
+  implementation: "The project was rolled out with focus on refining hiring processes followed by establishing ongoing support systems and leadership monitoring tools.",
+  results: [
+    "Built a highly effective sales and marketing team",
+    "Implemented sufficient reporting systems",
+    "Established excellent support systems for the sales team"
+  ],
+  businessImpact: [
+    "Reduced hiring inefficiencies",
+    "Improved sales team performance and retention",
+    "Enhanced leadership oversight and decision-making",
+    "Addressed talent shortage challenges proactively"
+  ],
+  roi: "Improved team performance over 5 months, enabling faster ramp-up and higher sales effectiveness, leading to better revenue generation and reduced turnover costs.",
+  testimonial: {
+    quote: "The new recruitment and support systems transformed our sales team dynamics and performance significantly.",
+    author: "Anonymous Client",
+    position: "HR Manager, Multi-location Firm"
+  }
+},
+  // {
+  //   id: 5,
+  //   title: "Healthcare Patient Portal",
+  //   description: "A secure, HIPAA-compliant patient portal that enables seamless communication between patients and healthcare providers, appointment scheduling, and access to medical records.",
+  //   industry: "Healthcare",
+  //   client: "Regional Healthcare Network",
+  //   duration: "7 months",
+  //   imageUrl: "/placeholder.svg?height=800&width=1200",
+  //   tags: ["Healthcare", "Patient Experience", "HIPAA Compliance"],
+  //   services: ["Web Application Development", "Mobile App Development", "Security Implementation", "Integration Services"],
+  //   technologies: ["React", "Node.js", "PostgreSQL", "FHIR API", "AWS"],
+  //   challenge: "The healthcare network needed to improve patient engagement and streamline administrative processes while ensuring strict compliance with privacy regulations. Their existing systems were fragmented, leading to poor patient experience and inefficient workflows.",
+  //   solution: "We developed an integrated patient portal that provides a unified interface for patients to manage appointments, communicate with providers, access medical records, and handle payments. The system integrates with existing EHR systems and prioritizes security and compliance.",
+  //   results: [
+  //     "65% increase in patient portal adoption",
+  //     "40% reduction in appointment no-shows",
+  //     "30% decrease in call center volume",
+  //     "90% of patients rated the portal as 'easy to use'"
+  //   ],
+  //   businessImpact: [
+  //     "Annual savings of $1.2M in administrative costs",
+  //     "Improved patient satisfaction scores by 35%",
+  //     "Reduced average wait time for appointments by 25%",
+  //     "Increased patient retention by 18%"
+  //   ],
+  //   testimonial: {
+  //     quote: "The patient portal has transformed our relationship with patients and significantly improved our operational efficiency. Patients appreciate the convenience, and our staff can focus more on providing care rather than administrative tasks.",
+  //     author: "Dr. Emily Rodriguez",
+  //     position: "Chief Medical Information Officer, Regional Healthcare Network"
+  //   }
+  // },
 ]
