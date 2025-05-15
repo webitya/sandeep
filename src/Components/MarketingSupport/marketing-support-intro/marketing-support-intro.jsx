@@ -52,9 +52,9 @@ export default function MarketingSupportIntro() {
   }
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -72,26 +72,7 @@ export default function MarketingSupportIntro() {
           </motion.div>
         </div>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <motion.div variants={itemVariants} key={index}>
-                <div className="p-8 h-full border border-gray-200 rounded-lg hover:shadow-xl transition-all duration-300 bg-white group hover:border-blue-200">
-                  <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+     
       </div>
     </section>
   )

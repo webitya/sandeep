@@ -18,7 +18,7 @@ export default function WhoFor() {
             </div>
             <div className="hidden md:block">
               <img
-                src="/placeholder.svg?height=300&width=400"
+                src="/academyc.webp"
                 alt="Skill assessment"
                 className="rounded-xl shadow-lg"
               />

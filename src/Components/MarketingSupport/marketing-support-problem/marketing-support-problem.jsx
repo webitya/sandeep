@@ -25,7 +25,7 @@ export default function MarketingSupportProblem() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-gray-900/20 to-transparent z-10 pointer-events-none"></div>
             <Image
-              src="/placeholder.svg?height=800&width=1200"
+              src="/salesab.webp"
               alt="Sales Communication Challenges"
               fill
               className="object-cover"

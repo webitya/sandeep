@@ -95,7 +95,7 @@ const ServicePageHero = () => {
             className="w-full lg:w-1/2 flex justify-center"
           >
             <img
-              src="/placeholder.svg" // Replace with your actual image path
+              src="/serviceb.webp" // Replace with your actual image path
               alt="Service Hero"
               className="h-[350px] max-w-md md:max-w-lg lg:max-w-xl rounded-xl shadow-xl object-cover"
             />

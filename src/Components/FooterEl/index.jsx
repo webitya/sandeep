@@ -9,13 +9,15 @@ import {
   YouTube as YouTubeIcon,
 } from '@mui/icons-material';
 import { Button } from '@mui/material';
+import SubscribeForm from '../SubscribeForm';
+
 
 const FooterEl = () => {
   return (
     <footer className="w-full bg-gray-100 border-t border-gray-300 text-gray-700 text-sm">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-10">
-
-        {/* About Us */}
+        
+        {/* About Us + Subscribe */}
         <FooterColumn title="About Us">
           <p className="text-sm mb-4">
             Sales Syllabus is a premium business consulting firm specializing in building and managing high performance sales and marketing teams using a scientific approach.
@@ -25,24 +27,29 @@ const FooterEl = () => {
               Learn More
             </Button>
           </Link>
+
+          {/* ✅ Subscribe Section */}
+          <div className="mt-6">
+            <h6 className="text-base font-semibold mb-2">Subscribe to Our Updates</h6>
+            <SubscribeForm />
+          </div>
         </FooterColumn>
 
         {/* Services */}
-        <FooterColumn title="Our Services">
+        <FooterColumn title="Our Links">
           {[
-            ['Learning Centre', '/learning-centre'],
-            ['Sales Ready Manpower', '/sales-ready-manpower'],
-            ['War Room', '/war-room'],
-            ['Market Analysis', '/market-analysis'],
-            ['Marketing Communication', '/marketing-communication'],
-            ['Reporting Framework', '/Sales-framework'],
-            ['Community Building', '/community-building'],
+            ['Home', '/'],
+            ['Academic', '/academic'],
+            ['About Us', '/about-us'],
+            ['Services', '/services'],
+            ['Sales Story Telling', '/sales-story-telling'],
+           
           ].map(([label, path]) => (
             <FooterLink key={label} href={path}>{label}</FooterLink>
           ))}
         </FooterColumn>
 
-        {/* Resources */}
+        {/* Get In Touch */}
         <FooterColumn title="Get In Touch">
           {[
             ['Free Resources', '/free-resources'],

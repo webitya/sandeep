@@ -36,7 +36,7 @@ export default function Hero() {
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="h-10 w-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
                     <img
-                      src={`/placeholder.svg?height=40&width=40&text=${i}`}
+                      src={`/p${i}.webp`}
                       alt={`User ${i}`}
                       className="h-full w-full object-cover"
                     />
@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="relative mx-auto md:ml-auto w-full max-w-md">
             <div className="aspect-video overflow-hidden rounded-2xl shadow-2xl relative">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/academya.webp"
                 alt="Leadership training overview"
                 className="h-full w-full object-cover"
               />

@@ -56,7 +56,7 @@ export default function LeadershipImpactLight() {
             className="relative h-[400px] w-full rounded-xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/leadership-concept.jpg" // Replace with your image
+              src="/academyb.webp" // Replace with your image
               alt="Leadership Simulation"
               fill
               className="object-cover"

@@ -68,7 +68,7 @@ export default function MarketingSupportHero() {
           >
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/10 to-transparent z-10 pointer-events-none"></div>
             <Image
-              src="/placeholder.svg?height=800&width=1200"
+              src="/salesa1.webp"
               alt="Enterprise Marketing Dashboard"
               fill
               className="object-cover"
