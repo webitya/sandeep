@@ -38,7 +38,7 @@ const NavbarEl3 = () => {
   ];
 
   const menus1 = [
-    { label: 'Sales Story', href: '/sales-story-telling' },
+    { label: 'Remote Marketing Team', href: '/remote-marketing-team' },
     { label: 'Faqs', href: '/faqs' },
     { label: 'Contact Us', href: '/contact-us' }
   ];

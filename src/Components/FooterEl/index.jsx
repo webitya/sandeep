@@ -42,7 +42,7 @@ const FooterEl = () => {
             ['Academic', '/academic'],
             ['About Us', '/about-us'],
             ['Services', '/services'],
-            ['Sales Story Telling', '/sales-story-telling'],
+            ['Remote Marketing Team', '/remote-marketing-team'],
            
           ].map(([label, path]) => (
             <FooterLink key={label} href={path}>{label}</FooterLink>
