@@ -5,7 +5,7 @@ import { Box, Typography } from '@mui/material';
 
 const AboutUsWhoWeAre = () => {
   return (
-    <section className="w-full bg-white py-10 px-4">
+    <section id='about-us' className="w-full bg-white py-10 px-4">
       <Box  mx="auto">
         <Typography variant="h4" fontWeight="bold" color="textPrimary" gutterBottom>
           Who We Are

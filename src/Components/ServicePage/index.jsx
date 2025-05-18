@@ -10,7 +10,7 @@ const ServicePage = () => {
   return (
     <div className="min-h-screen bg-white">
       <ServicePageHero />
-      <ServicePageOverview />
+      {/* <ServicePageOverview /> */}
       <ServicePageServices />
       <ServicePageClients />
       <ServicePageEngagement />

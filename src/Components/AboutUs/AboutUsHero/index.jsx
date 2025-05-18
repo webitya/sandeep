@@ -32,7 +32,7 @@ const AboutUsHeroSection = () => {
             We help businesses hire the right people, train them with real-world insights, and empower them with strategies to drive scalable, predictable revenue growth.
           </p>
 
-          <Link href="/services" target="_blank">
+          <Link href="#about-us">
             <Button
               variant="contained"
               size="large"
@@ -49,7 +49,7 @@ const AboutUsHeroSection = () => {
                 },
               }}
             >
-              Explore Our Solutions
+              Know Us More
             </Button>
           </Link>
         </div>

@@ -99,7 +99,7 @@ const ServicePageServices = () => {
   const isMobile = useMediaQuery("(max-width: 768px)")
 
   return (
-    <section className="py-10 bg-gradient-to-b from-gray-100 to-slate-100">
+    <section id="services" className="py-10 bg-gradient-to-b from-gray-100 to-slate-100">
       <div className="mx-auto px-2">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -21,7 +21,7 @@ const ServicePageOverview = () => {
   }
 
   return (
-    <section className="py-10 md:py-10 bg-white relative">
+    <section  className="py-10 md:py-10 bg-white relative">
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-gradient-to-bl from-indigo-50 to-transparent rounded-bl-full opacity-70"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-gradient-to-tr from-slate-50 to-transparent rounded-tr-full opacity-70"></div>
 

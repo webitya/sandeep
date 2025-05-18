@@ -2,6 +2,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@mui/material"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward"
+import Link from "next/link"
 
 const ServicePageHero = () => {
   return (
@@ -47,6 +48,7 @@ const ServicePageHero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
             >
+              <Link href="https://calendly.com/salessyllabus" target="_blank">
               <Button
                 variant="contained"
                 size="large"
@@ -64,7 +66,8 @@ const ServicePageHero = () => {
               >
                 Book a Free Discovery Call
               </Button>
-
+              </Link>
+<Link href="#services">
               <Button
                 variant="outlined"
                 size="large"
@@ -84,6 +87,7 @@ const ServicePageHero = () => {
               >
                 View Our Services
               </Button>
+              </Link>
             </motion.div>
           </motion.div>
 
