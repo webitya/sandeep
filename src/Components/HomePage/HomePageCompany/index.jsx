@@ -46,7 +46,7 @@ const HomePageCompany = () => {
   };
 
   return (
-    <div className="py-16 bg-gradient-to-tr from-[#1e3a8a] via-[#1e40af] to-[#1e3a8a] text-white overflow-hidden">
+    <div id="companies1" className="py-16 bg-gradient-to-tr from-[#1e3a8a] via-[#1e40af] to-[#1e3a8a] text-white overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}

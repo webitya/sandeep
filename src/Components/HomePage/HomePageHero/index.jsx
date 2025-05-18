@@ -33,7 +33,7 @@ export default function HomePageHeroSection() {
   };
 
   return (
-    <div className="bg-gradient-to-r min-h-screen from-blue-50 flex justify-center items-center via-white to-blue-100 py-20 px-4">
+    <div className="bg-gradient-to-r min-h-[80vh] from-blue-50 flex justify-center items-center via-white to-blue-100 pt-20 py-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         {/* Left Section */}
@@ -47,22 +47,22 @@ export default function HomePageHeroSection() {
           </h1>
           <p className="text-gray-600 text-lg mb-8">
             We help businesses from <span className="text-blue-700 font-semibold">₹1 Cr</span> to
-            <span className="text-blue-700 font-semibold"> ₹1,000 Cr</span> to <strong>recruit</strong>, <strong>train</strong>, and <strong>grow</strong> sales and marketing talent to scale your business.
+            <span className="text-blue-700 font-semibold"> ₹1,000 Cr</span> to <strong>recruit</strong>, <strong>train</strong>, and <strong>grow</strong> sales and marketing talent to scale their business.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="/contact-us"
+              href="#companies1"
               className="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 shadow-lg hover:bg-blue-700 transition"
             >
               <RocketLaunchIcon fontSize="small" />
-              GET STARTED
+              Learn More
             </a>
-            <a
+            {/* <a
               href="/about-us"
               className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition"
             >
               LEARN MORE
-            </a>
+            </a> */}
           </div>
         </motion.div>
 
@@ -111,7 +111,7 @@ export default function HomePageHeroSection() {
                 sx={{ gridColumn: 'span 2' }}
               />
               <TextField
-                label="Hiring Requirement"
+                label="Hiring Type"
                 name="hiring_requirement"
                 required
                 select
