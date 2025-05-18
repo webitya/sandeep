@@ -362,7 +362,7 @@ export default function RemoteMarketingTeam() {
                     className="text-lg text-gray-700 mb-6 italic border-l-4 border-blue-200 pl-4 bg-blue-50/50 py-2 rounded-r-md"
                     variants={slideIn}
                   >
-                    "I don t have a dedicated marketing team. My sales team handles both ."
+                    I don t have a dedicated marketing team. My sales team handles both
                   </motion.p>
                   
                   <motion.div 
@@ -423,7 +423,7 @@ export default function RemoteMarketingTeam() {
                     className="text-lg text-gray-700 mb-6 italic border-l-4 border-blue-200 pl-4 bg-blue-50/50 py-2 rounded-r-md"
                     variants={slideIn}
                   >
-                    "I have a marketing team, but they are not performing."
+                    I have a marketing team, but they are not performing
                   </motion.p>
                   
                   <motion.div 
@@ -464,7 +464,7 @@ export default function RemoteMarketingTeam() {
                     className="text-lg text-gray-700 mb-6 italic border-l-4 border-blue-200 pl-4 bg-blue-50/50 py-2 rounded-r-md"
                     variants={slideIn}
                   >
-                    "We re generating leads, but sales closures are low."
+                    We re generating leads, but sales closures are low
                   </motion.p>
                   
                   <motion.div 
