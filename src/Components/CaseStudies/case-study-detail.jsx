@@ -67,7 +67,7 @@ export default function CaseStudyDetail({ caseStudy, onBack }) {
 
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="md:w-3/4">
+          <div className="">
             <div className="w-full">
               <div className="w-full justify-start mb-8 bg-gray-100 p-1 rounded-md flex">
                 <button
@@ -153,7 +153,7 @@ export default function CaseStudyDetail({ caseStudy, onBack }) {
                     )}
                   </div>
 
-                  <div className="mt-8">
+                  {/* <div className="mt-8">
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Technologies Used</h3>
                     <div className="flex flex-wrap gap-2">
                       {caseStudy.technologies &&
@@ -166,7 +166,7 @@ export default function CaseStudyDetail({ caseStudy, onBack }) {
                           </span>
                         ))}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               )}
 
@@ -286,7 +286,7 @@ export default function CaseStudyDetail({ caseStudy, onBack }) {
               )}
             </div>
           </div>
-
+{/* 
           <div className="md:w-1/4">
             <div className="bg-gray-50 rounded-lg p-6 mb-6 sticky top-20">
               <h3 className="text-lg font-bold text-gray-900 mb-4">Case Study Information</h3>
@@ -337,13 +337,13 @@ export default function CaseStudyDetail({ caseStudy, onBack }) {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className="mt-12 border-t border-gray-200 pt-12">
+        {/* <div className="mt-12 border-t border-gray-200 pt-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Related Case Studies</h2>
           <RelatedCaseStudies currentCaseId={caseStudy.id} industry={caseStudy.industry} />
-        </div>
+        </div> */}
       </div>
     </div>
   )
