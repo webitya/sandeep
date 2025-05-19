@@ -33,7 +33,7 @@ export default function HomePageHeroSection() {
   };
 
   return (
-    <div className="bg-gradient-to-r min-h-[80vh] from-blue-50 flex justify-center items-center via-white to-blue-100 pt-20 py-10 px-4">
+    <div className="bg-gradient-to-r min-h-[90vh] from-blue-50 flex justify-center items-center via-white to-blue-100 pt-20 py-10 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
         {/* Left Section */}

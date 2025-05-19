@@ -9,16 +9,28 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const testimonials = [
   {
-    name: 'Rohit Verma',
-    position: 'Founder, B2B SaaS Startup',
+    name: 'Ankur Goyal',
+    position: 'Founder, AgSuite Technology',
     testimonial:
-      'With Sales Syllabus, we built a sales team that actually delivers. They understood our goals and gave us exactly the right people.',
+      'The screening and on boarding process designed by Sales Syllabus for sales and marketing roles is highly strategic. We observed quick market readiness in new hires, saving us a minimum of 45 days of otherwise unproductive on boarding time.',
   },
   {
-    name: 'Anita Desai',
-    position: 'Director, Manufacturing Company',
+    name: 'Brijesh Singh',
+    position: 'Founder, Groots Technology, Pune',
     testimonial:
-      'Their process feels like an extension of our leadership team. Highly strategic, deeply involved, and results-focused.',
+      'With Sales Syllabus, we are able to hire, onboard, and make new team members market-ready within just 30 days — a significant improvement in our hiring efficiency.',
+  },
+  {
+    name: 'Yogesh Pawar',
+    position: 'Founder, Digital Edu IT Solutions Pvt. Ltd.',
+    testimonial:
+      'The entire recruitment process for our sales team was smooth, insightful, and aligned with our succession planning goals. It not only saved us significant costs but also helped in reducing attrition.',
+  },
+  {
+    name: 'Kadir',
+    position: 'Founder, Twig Software',
+    testimonial:
+      'Sales Syllabus brought an exceptional, out-of-the-box, and data-driven approach to team building. Their strategic thinking truly set them apart.',
   },
 ];
 
@@ -30,7 +42,7 @@ const HomePageTestimonials = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     arrows: false,
     pauseOnHover: true,
   };
@@ -69,7 +81,7 @@ const HomePageTestimonials = () => {
                   <Avatar
                     sx={{ bgcolor: '#2b3c73', width: 56, height: 56, mb: 1 }}
                   >
-                    {item.name[0]}
+                    {item.name.charAt(0)}
                   </Avatar>
 
                   <Typography variant="h6" className="text-gray-900">

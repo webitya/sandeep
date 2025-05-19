@@ -39,6 +39,12 @@ const executionSteps = [
       'We handle sourcing, screening, and onboarding of your sales and marketing professionals to build your ideal team.',
     icon: <PersonAddIcon className="text-purple-600 text-2xl" />,
   },
+  {
+    title: 'Mentoring',
+    description:
+      'We provide dedicated mentorship during the initial months to ensure every new hire receives the strategic support they need to succeed.',
+    icon: <SearchIcon className="text-green-600 text-2xl" />,
+  },
 ];
 
 export default function HomePageExecutionProcess() {

@@ -1,87 +1,70 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { WorkOutline, BusinessCenter, Group, Insights, Settings, Build, Devices, Star } from "@mui/icons-material"
+import {
+  WorkOutline,
+  BusinessCenter,
+  Group,
+  Insights,
+  Settings,
+  Build,
+} from "@mui/icons-material"
 
 const recruitmentData = [
   {
     icon: <WorkOutline fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Goal",
-    traditional: "Fill vacant roles based on job descriptions",
-    syllabus: "Build outcome-aligned teams to achieve business goals",
+    category: "Ownership",
+    traditional: "Fills roles or trains people",
+    syllabus: "Builds the full team-performance system",
   },
   {
     icon: <BusinessCenter fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Business Context",
-    traditional: "Limited understanding of org culture, leadership, and revenue plans",
-    syllabus: "Deep immersion via culture mapping, review meetings, goal alignment",
+    category: "Hiring Fit",
+    traditional: "Resume-based decisions",
+    syllabus: "Culture, context & capability-based mapping",
   },
   {
     icon: <Insights fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Planning Depth",
-    traditional: "Reactive hiring when a need arises",
-    syllabus: "Proactive strategic workforce planning aligned with growth strategy",
+    category: "Enablement",
+    traditional: "One-off training",
+    syllabus: "Embedded onboarding & 30-60-90 plans",
   },
   {
     icon: <Group fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Hiring Models",
-    traditional: "Full-time roles only",
-    syllabus: "Flexible models — full-time, project-based, fractional, contract",
+    category: "KPI Planning",
+    traditional: "Not included",
+    syllabus: "Core to process",
   },
   {
     icon: <Settings fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Talent Fit",
-    traditional: "Focus on CVs and interviews",
-    syllabus: "Focus on team dynamics, skill gaps, and long-term fit",
+    category: "Business Impact",
+    traditional: "Hopes for results",
+    syllabus: "Designs for predictable performance",
   },
   {
     icon: <Build fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Post-Hire Support",
-    traditional: "Ends at joining",
-    syllabus: "Includes onboarding, performance planning, and skill enablement",
-  },
-  {
-    icon: <Insights fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Performance Linkage",
-    traditional: "No direct connection to business outcomes",
-    syllabus: "Clear ROI tracking through KPI planning and enablement systems",
-  },
-  {
-    icon: <Devices fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Skill Development",
-    traditional: "Not part of the process",
-    syllabus: "Integrated training, performance audits, and capability building",
-  },
-  {
-    icon: <Devices fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Technology/Tools",
-    traditional: "Often manual or outsourced assessments",
-    syllabus: "Includes performance tracking, skill-gap analysis, and reporting tools",
-  },
-  {
-    icon: <Star fontSize="small" className="text-blue-700 drop-shadow-sm" />,
-    category: "Overall Value",
-    traditional: "Transactional, short-term",
-    syllabus: "Strategic, outcome-focused, and long-term business value",
+    category: "Accountability",
+    traditional: "None post-hire",
+    syllabus: "Supports execution with tools & coaching",
   },
 ]
 
 export default function HomeRecruitment() {
   return (
-    <div className="bg-gradient-to-br from-white via-slate-50 to-blue-50 min-h-screen py-6 px-3 sm:px-6 md:px-12 flex items-start justify-center text-gray-800">
+    <div className="bg-gradient-to-br from-white via-slate-50 to-blue-50 py-10 px-4 sm:px-6 md:px-12 flex justify-center text-gray-800">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="max-w-7xl w-full"
+        className="max-w-6xl w-full"
       >
         {/* Header */}
-        <div className="text-center mb-6 sm:mb-8">
+        <div className="text-center mb-10">
           <motion.h2
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-2 sm:mb-3"
+            className="text-3xl sm:text-4xl font-bold text-blue-900"
           >
             Sales Syllabus vs Traditional Recruitment
           </motion.h2>
@@ -89,28 +72,29 @@ export default function HomeRecruitment() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="text-xs sm:text-sm md:text-base text-gray-600 max-w-3xl mx-auto px-2"
+            className="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto mt-2"
           >
-            "The Problem Isn't Just Talent. It's the Process." <br className="hidden sm:block" />
-            We're not replacing your recruiters — we're replacing the broken process that causes misalignment, failed
-            hires, and poor performance.
+            "The Problem Isn't Just Talent. It's the Process." <br />
+            We're not replacing your recruiters — we're replacing the broken process causing misalignment, failed hires, and poor performance.
           </motion.p>
-          <div className="w-16 sm:w-20 h-1 bg-blue-600 mx-auto mt-3 sm:mt-5 rounded-full shadow-sm" />
+          <div className="w-16 h-1 bg-blue-600 mx-auto mt-2 rounded-full shadow-sm" />
         </div>
 
-        {/* Desktop Table (hidden on small screens) */}
+        {/* Desktop Table */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white hidden sm:block"
+          className="hidden sm:block rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white"
         >
-          <div className="grid grid-cols-12 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold px-4 py-3 text-left">
-            <div className="col-span-2 flex items-center text-sm">Category</div>
-            <div className="col-span-5 text-sm">Traditional Recruitment Process</div>
-            <div className="col-span-5 text-sm">Sales Syllabus Approach</div>
+          {/* Header Row */}
+          <div className="grid grid-cols-3 bg-blue-600 text-white font-semibold text-sm px-6 py-3">
+            <div className="flex items-center">Category</div>
+            <div className="flex items-center">Traditional</div>
+            <div className="flex items-center">Sales Syllabus</div>
           </div>
 
+          {/* Data Rows */}
           {recruitmentData.map((item, i) => (
             <motion.div
               key={i}
@@ -118,28 +102,25 @@ export default function HomeRecruitment() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
               viewport={{ once: true }}
-              className={`grid grid-cols-12 px-4 py-2.5 transition-all duration-300 ${
+              className={`grid grid-cols-3 px-6 py-1 text-sm ${
                 i % 2 === 0 ? "bg-white" : "bg-slate-50"
-              } hover:bg-blue-50 border-b border-gray-100 last:border-b-0`}
+              } hover:bg-blue-50 transition duration-300 border-b last:border-b-0`}
             >
-              <div className="col-span-2 flex gap-1.5 items-center font-medium text-blue-900">
-                <span className="bg-blue-50 p-1.5 rounded-md flex items-center justify-center shadow-sm">
-                  {item.icon}
-                </span>
-                <span className="text-xs md:text-sm truncate">{item.category}</span>
+              {/* Category */}
+              <div className="flex items-start gap-2 text-blue-900 font-medium">
+                <span className="bg-blue-100 p-2 rounded-md shadow-sm">{item.icon}</span>
+                <span className="leading-5">{item.category}</span>
               </div>
-              <div className="col-span-5 text-gray-600 text-xs md:text-sm pl-2 flex items-center">
-                {item.traditional}
-              </div>
-              <div className="col-span-5 text-blue-800 text-xs md:text-sm pl-2 font-medium flex items-center">
-                {item.syllabus}
-              </div>
+              {/* Traditional */}
+              <div className="text-gray-600 leading-5">{item.traditional}</div>
+              {/* Syllabus */}
+              <div className="text-blue-800 font-medium leading-5">{item.syllabus}</div>
             </motion.div>
           ))}
         </motion.div>
 
-        {/* Mobile Cards (visible only on small screens) */}
-        <div className="sm:hidden space-y-4">
+        {/* Mobile Cards */}
+        <div className="sm:hidden space-y-4 mt-4">
           {recruitmentData.map((item, i) => (
             <motion.div
               key={i}
@@ -147,32 +128,33 @@ export default function HomeRecruitment() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200"
+              className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden"
             >
-              <div className="bg-gradient-to-r from-blue-600 to-blue-500 text-white p-3 flex items-center gap-2">
-                <span className="bg-white/20 p-1.5 rounded-md flex items-center justify-center">{item.icon}</span>
-                <span className="font-medium">{item.category}</span>
+              <div className="bg-blue-600 text-white flex items-center gap-2 px-3 py-2 text-sm font-medium">
+                <span className="bg-white/20 p-1.5 rounded-md">{item.icon}</span>
+                <span>{item.category}</span>
               </div>
-              <div className="p-3 border-b border-gray-100">
-                <div className="text-xs font-semibold text-gray-500 mb-1">Traditional Approach:</div>
-                <div className="text-sm text-gray-600">{item.traditional}</div>
+              <div className="px-4 py-2 border-b border-gray-100 text-sm">
+                <p className="text-xs font-semibold text-gray-500 mb-1">Traditional:</p>
+                <p className="text-gray-700">{item.traditional}</p>
               </div>
-              <div className="p-3 bg-blue-50">
-                <div className="text-xs font-semibold text-blue-600 mb-1">Sales Syllabus Approach:</div>
-                <div className="text-sm text-blue-800 font-medium">{item.syllabus}</div>
+              <div className="px-4 py-2 bg-blue-50 text-sm">
+                <p className="text-xs font-semibold text-blue-600 mb-1">Sales Syllabus:</p>
+                <p className="text-blue-800 font-medium">{item.syllabus}</p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
+        {/* Footer Note */}
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="text-center mt-6 text-xs text-gray-500"
+          className="text-center text-xs text-gray-500 mt-6"
         >
           Compare our approach to see the difference in outcomes
-        </motion.div>
+        </motion.p>
       </motion.div>
     </div>
   )

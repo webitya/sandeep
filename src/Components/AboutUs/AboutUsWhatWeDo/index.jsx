@@ -50,7 +50,8 @@ export default function WhatWeDo() {
               Tell Your Sales Story to Win Customers
             </h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Through our marketing support services, we help you craft and distribute a compelling sales narrative that builds trust, strengthens your brand, and drives qualified leads. It’s not about flashy ads — it’s about influence-driven content that converts.
+             Hire a Remote Marketing Team That Delivers from Day One
+We help organizations hire high-performing remote marketing teams specialized in lead generation and brand building. Every team we provide is well-trained, strategically aligned, and productive from day one—so you can accelerate growth without the hassle of micromanagement
             </p>
           </motion.div>
 

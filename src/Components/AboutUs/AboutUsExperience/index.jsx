@@ -49,7 +49,7 @@ const AboutUsExperience = () => {
       </div>
 
       {/* Founder Section */}
-      <div className="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      {/* <div className="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
         <div className="md:col-span-4 flex justify-center">
           <Image
             src="/sandeep.jpg"
@@ -74,7 +74,7 @@ const AboutUsExperience = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
