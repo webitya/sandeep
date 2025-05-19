@@ -7,40 +7,35 @@ import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer"
 const ServicePageFAQ = () => {
   const faqs = [
     {
-      question: "Do you help with only sales hiring, or marketing too?",
+      question: "Do we need to use all services, or can we start small?",
       answer:
-        "We specialize in both sales and marketing hiring — because real growth happens when these functions work together. Whether you need BDRs, account executives, performance marketers, or brand strategists, we build complete revenue teams that perform.",
+        "You can begin with any one service — hiring, training, advisory, or audit. Most clients start with a project and scale up to ongoing monthly engagements.",
     },
     {
-      question: "Can we use only training services without hiring through you?",
+      question: "Can we use your training even if we don’t hire through you?",
       answer:
-        "Yes. Many clients come to us with an existing team and want to upgrade performance through training. Our training programs are modular, case study-based, and tailored for B2B sales and marketing roles.",
+        "Absolutely. Many companies bring us in to upskill their existing teams through our cohort-based and self-paced programs.",
     },
     {
-      question: "Do you work with agencies, product companies, or traditional businesses?",
+      question: "What if we just want a one-time project, not monthly support?",
       answer:
-        "Yes. We work across B2B SaaS, D2C brands, traditional manufacturing, and service companies. If your business has a clear growth goal and needs a better performing team, we can help — regardless of industry.",
+        "That’s perfectly fine. We support one-time hiring drives, sales team audits, or founder advisory on a project basis",
     },
     {
-      question: "What's your guarantee on candidates?",
+      question: "How do you ensure your hires perform post-joining?",
       answer:
-        "For permanent hires, we offer a free replacement within the first 30 days if performance expectations are not met. For temporary consultants, you only pay for actual working hours or deliverables.",
+        "Every hire goes through structured onboarding, performance-linked training, and monthly learning sprints — increasing their ramp-up speed and effectiveness.",
     },
     {
-      question: "How fast can we expect to start seeing results?",
-      answer:
-        "Culture Mapping Report: Within 7 days\nShortlist of Candidates: Within 10–14 days\nOnboarding & Training: Can begin in 2–3 weeks\n\nResults vary based on team size and engagement level — but most clients see visible team performance improvements in the first 30–45 days.",
+      question: "What training formats do you offer?",
+      answer:"• Self-paced onboarding programs\n B  •	Live monthly problem-solving sessions\n C  •	Real-world case study learning\n D  •	Access to the Sales Syllabus Learning Library",
     },
     {
-      question: "What kind of training formats do you offer?",
+      question: "Do you offer services outside India?",
       answer:
-        "We offer:\n- Self-paced onboarding courses for different roles\n- Live sessions & monthly problem-solving sprints\n- Case-based learning library (one real-world scenario each month)\n\nAll training is available online, and can be customized for your team.",
+        "Currently, we primarily serve Indian companies or India-focused business units. Global expansion is planned soon.",
     },
-    {
-      question: "Can we hire for short-term or project-based needs?",
-      answer:
-        "Absolutely. Our temporary hiring model helps you bring in specialists (campaign managers, outbound experts, etc.) on an hourly or weekly basis — perfect for urgent skill gaps or pilot projects.",
-    },
+    
   ]
 
   return (
