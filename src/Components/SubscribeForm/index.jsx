@@ -1,15 +1,31 @@
 'use client';
+
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Button, TextField } from '@mui/material';
+import {
+  Button,
+  TextField,
+  MenuItem,
+  Select,
+  FormControl,
+  InputLabel,
+  Typography,
+} from '@mui/material';
 
 const SubscribeForm = () => {
   const form = useRef();
   const [email, setEmail] = useState('');
+  const [audience, setAudience] = useState('');
   const [status, setStatus] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!audience) {
+      setStatus('Please select an audience type.');
+      return;
+    }
+
     setStatus('Sending...');
 
     emailjs
@@ -23,6 +39,7 @@ const SubscribeForm = () => {
         () => {
           setStatus('Subscribed successfully!');
           setEmail('');
+          setAudience('');
         },
         (error) => {
           console.error(error);
@@ -32,7 +49,21 @@ const SubscribeForm = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-3 mt-4">
+    <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 mt-4 w-full max-w-md">
+      <FormControl size="small" fullWidth required>
+        <InputLabel id="audience-label">Subscribe As</InputLabel>
+        <Select
+          labelId="audience-label"
+          name="user_type"
+          value={audience}
+          label="Subscribe As"
+          onChange={(e) => setAudience(e.target.value)}
+        >
+          <MenuItem value="Organization">For Organization</MenuItem>
+          <MenuItem value="Professional">For Working Professional</MenuItem>
+        </Select>
+      </FormControl>
+
       <TextField
         name="user_email"
         label="Enter your email"
@@ -43,10 +74,16 @@ const SubscribeForm = () => {
         onChange={(e) => setEmail(e.target.value)}
         fullWidth
       />
-      <Button type="submit" variant="contained" color="primary">
+
+      <Button type="submit" variant="contained" color="primary" fullWidth>
         Subscribe Now
       </Button>
-      {status && <p className="text-xs text-gray-600 mt-1">{status}</p>}
+
+      {status && (
+        <Typography variant="body2" className="text-gray-600 mt-1">
+          {status}
+        </Typography>
+      )}
     </form>
   );
 };

@@ -8,6 +8,7 @@ import Assessment from "./academy-page-assessment"
 import CTA from "./academy-page-cta"
 import AcademyNextPhaseProgram from "./academy-next-phase"
 import AcademyCareerTracks from "./academy-career-track"
+import AcademyNewsletterSubscribe from "./NewsLetter"
 
 export default function AcademyPage() {
   return (
@@ -23,6 +24,7 @@ export default function AcademyPage() {
       {/* <Testimonials /> */}
       {/* <Assessment /> */}
       {/* <CTA /> */}
+      <AcademyNewsletterSubscribe/>
     </div>
   )
 }
