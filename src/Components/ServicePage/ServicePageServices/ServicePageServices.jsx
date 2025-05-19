@@ -24,7 +24,7 @@ const services = [
     bestFor: "SME founders scaling from ₹1 Cr to ₹100 Cr+",
     timeline: "1–2 weeks",
     cta: "Book Strategy Session",
-    ctaLink: "/book-strategy-session",
+    ctaLink: "https://calendly.com/salessyllabus",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const services = [
       "Telecallers, Campaign Operators",
     ],
     cta: "Request a Talent Call",
-    ctaLink: "/request-talent-call",
+    ctaLink: "https://calendly.com/salessyllabus",
   },
   {
     id: 3,
@@ -61,7 +61,7 @@ const services = [
     icon: <SchoolIcon fontSize="large" color="primary" />,
     additional: "Also includes access to Sales Syllabus Learning Library",
     cta: "See Training Plans",
-    ctaLink: "/training-plans",
+    ctaLink: "https://calendly.com/salessyllabus",
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ const services = [
     icon: <PsychologyIcon fontSize="large" color="primary" />,
     bestFor: "Founders of ₹3–₹20 Cr companies",
     cta: "Apply for Advisory Access",
-    ctaLink: "/advisory-access",
+    ctaLink: "https://calendly.com/salessyllabus",
   },
   {
     id: 5,
@@ -90,7 +90,7 @@ const services = [
     ],
     icon: <AssessmentIcon fontSize="large" color="primary" />,
     cta: "Request an Audit",
-    ctaLink: "/request-audit",
+    ctaLink: "https://calendly.com/salessyllabus",
   },
 ]
 
