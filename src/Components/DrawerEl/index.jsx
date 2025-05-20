@@ -27,41 +27,43 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
     { label: "Services", href: "/services" },
+    { label: "Remote Marketing Team", href: "/remote-marketing-team" },
+     { label: "Academic", href: "/academic" },
     { label: "Contact Us", href: "/contact-us" },
-    {
-      label: "All Services",
-      submenu: [
-        {
-          label: "Revenue Acceleration Consulting",
-          submenu: [
-            { label: "Lead Generation Process Set Up", href: "/lead-generation-process-setup" },
-            { label: "Strategic account management", href: "/strategic-account-management" },
-            { label: "Market Analysis", href: "/market-analysis" },
-            { label: "Marketing Communication Strategy", href: "/marketing-communication" },
-            { label: "Community Building", href: "/community-building" },
-          ],
-        },
-        {
-          label: "Sales and marketing team Management solution",
-          submenu: [
-            { label: "Sales & Marketing War Room", href: "/war-room" },
-            { label: "Reporting Framework development", href: "/Sales-framework" },
-            { label: "Learning centre", href: "/learning-centre" },
-            { label: "Academy", href: "/academy" },
-          ],
-        },
-        {
-          label: "Sales team building solution",
-          submenu: [
-            { label: "Leadership Hiring & Mentoring", href: "/leadership-hiring-and-mentoring" },
-            { label: "Sales-Ready ManPower : Pre-Trained Talent", href: "/sales-ready-manpower" },
-            { label: "Master Class", href: "/master-class" },
-            { label: "Interview as a services", href: "/interview" },
-            { label: "Marketing Support", href: "/marketing-support" },
-          ],
-        },
-      ],
-    },
+    // {
+    //   label: "All Services",
+    //   submenu: [
+    //     {
+    //       label: "Revenue Acceleration Consulting",
+    //       submenu: [
+    //         { label: "Lead Generation Process Set Up", href: "/lead-generation-process-setup" },
+    //         { label: "Strategic account management", href: "/strategic-account-management" },
+    //         { label: "Market Analysis", href: "/market-analysis" },
+    //         { label: "Marketing Communication Strategy", href: "/marketing-communication" },
+    //         { label: "Community Building", href: "/community-building" },
+    //       ],
+    //     },
+    //     {
+    //       label: "Sales and marketing team Management solution",
+    //       submenu: [
+    //         { label: "Sales & Marketing War Room", href: "/war-room" },
+    //         { label: "Reporting Framework development", href: "/Sales-framework" },
+    //         { label: "Learning centre", href: "/learning-centre" },
+    //         { label: "Academy", href: "/academy" },
+    //       ],
+    //     },
+    //     {
+    //       label: "Sales team building solution",
+    //       submenu: [
+    //         { label: "Leadership Hiring & Mentoring", href: "/leadership-hiring-and-mentoring" },
+    //         { label: "Sales-Ready ManPower : Pre-Trained Talent", href: "/sales-ready-manpower" },
+    //         { label: "Master Class", href: "/master-class" },
+    //         { label: "Interview as a services", href: "/interview" },
+    //         { label: "Marketing Support", href: "/marketing-support" },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
       label: "Resources",
       submenu: [
