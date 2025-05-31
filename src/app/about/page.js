@@ -1,8 +1,8 @@
-import AboutHero from "@/components/AboutPageV2/AboutHero"
-import AboutMission from "@/components/AboutPageV2/AboutMission"
-import AboutConsulting from "@/components/AboutPageV2/AboutConsulting"
-import AboutDifference from "@/components/AboutPageV2/AboutDifference"
-import AboutCTA from "@/components/AboutPageV2/AboutCTA"
+import AboutHero from "../../Components/AboutPageV2/AboutHero"
+import AboutMission from "../../Components/AboutPageV2/AboutMission"
+import AboutConsulting from "../../Components/AboutPageV2/AboutConsulting"
+import AboutDifference from "../../Components/AboutPageV2/AboutDifference"
+import AboutCTA from "../../Components/AboutPageV2/AboutCTA"
 import FooterEl from "@/Components/FooterEl"
 
 export const metadata = {
