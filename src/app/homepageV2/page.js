@@ -12,15 +12,15 @@ import HomePageWho from "@/Components/HomePage/HomePageWho"
 import HomeRecruitment from "@/Components/HomePage/HomeRecruitment"
 // ===================================================================
 
-import HomeHero from "@/components/HomePageV2/HomeHero"
-import HomeAbout from "@/components/HomePageV2/HomeAbout"
-import HomeFeatures from "@/components/HomePageV2/HomeFeatures"
-import HomeAudience from "@/components/HomePageV2/HomeAudience"
-import HomeComparison from "@/components/HomePageV2/HomeComparison"
-import HomeProgramArchitecture from "@/components/HomePageV2/HomeProgramArchitecture"
-import HomeFAQ from "@/components/HomePageV2/HomeFAQ"
-import HomeTestimonials from "@/components/HomePageV2/HomeTestimonials"
-import HomeCTA from "@/components/HomePageV2/HomeCTA"
+import HomeHero from "../../Components/HomePageV2/HomeHero"
+import HomeAbout from "../../Components/HomePageV2/HomeAbout"
+import HomeFeatures from "../../Components/HomePageV2/HomeFeatures"
+import HomeAudience from "../../Components/HomePageV2/HomeAudience"
+import HomeComparison from "../../Components/HomePageV2/HomeComparison"
+import HomeProgramArchitecture from "../../Components/HomePageV2/HomeProgramArchitecture"
+import HomeFAQ from "../../Components/HomePageV2/HomeFAQ"
+import HomeTestimonials from "../../Components/HomePageV2/HomeTestimonials"
+import HomeCTA from "../../Components/HomePageV2/HomeCTA"
 
 const HomePage=()=>{
   return (

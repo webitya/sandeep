@@ -1,8 +1,8 @@
-import ProgramsHero from "@/components/ProgramsPageV2/ProgramsHero"
-import ProgramsOverview from "@/components/ProgramsPageV2/ProgramsOverview"
-import ProgramsTracks from "@/components/ProgramsPageV2/ProgramsTracks"
-import ProgramsSupport from "@/components/ProgramsPageV2/ProgramsSupport"
-import ProgramsCTA from "@/components/ProgramsPageV2/ProgramsCTA"
+import ProgramsHero from "../../Components/ProgramsPageV2/ProgramsHero"
+import ProgramsOverview from "../../Components/ProgramsPageV2/ProgramsOverview"
+import ProgramsTracks from "../../Components/ProgramsPageV2/ProgramsTracks"
+import ProgramsSupport from "../../Components/ProgramsPageV2/ProgramsSupport"
+import ProgramsCTA from "../../Components/ProgramsPageV2/ProgramsCTA"
 import FooterEl from "@/Components/FooterEl"
 
 export const metadata = {

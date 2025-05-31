@@ -1,9 +1,9 @@
-import RevenuePilotHero from "@/components/RevenuePilotPageV2/RevenuePilotHero"
-import RevenuePilotDeliverables from "@/components/RevenuePilotPageV2/RevenuePilotDeliverables"
-import RevenuePilotProblem from "@/components/RevenuePilotPageV2/RevenuePilotProblem"
-import RevenuePilotGuarantee from "@/components/RevenuePilotPageV2/RevenuePilotGuarantee"
-import RevenuePilotAudience from "@/components/RevenuePilotPageV2/RevenuePilotAudience"
-import RevenuePilotCTA from "@/components/RevenuePilotPageV2/RevenuePilotCTA"
+import RevenuePilotHero from "../../Components/RevenuePilotPageV2/RevenuePilotHero"
+import RevenuePilotDeliverables from "../../Components/RevenuePilotPageV2/RevenuePilotDeliverables"
+import RevenuePilotProblem from "../../Components/RevenuePilotPageV2/RevenuePilotProblem"
+import RevenuePilotGuarantee from "../../Components/RevenuePilotPageV2/RevenuePilotGuarantee"
+import RevenuePilotAudience from "../../Components/RevenuePilotPageV2/RevenuePilotAudience"
+import RevenuePilotCTA from "../../Components/RevenuePilotPageV2/RevenuePilotCTA"
 import FooterEl from "@/Components/FooterEl"
 
 export const metadata = {
