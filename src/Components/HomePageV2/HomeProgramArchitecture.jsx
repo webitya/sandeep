@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import { Box, Container, Typography, Stack, Avatar, Paper, Divider } from "@mui/material"
 
 export default function HomeProgramArchitecture() {
   const steps = [
@@ -32,40 +33,87 @@ export default function HomeProgramArchitecture() {
   ]
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <Box component="section" py={12} sx={{ background: "linear-gradient(to bottom, #f9fafb, #e0e7ff)" }}>
+      <Container maxWidth="md">
         <motion.div
-          className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Program Architecture</h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">Inside the Learning Journey</p>
+          <Typography variant="h4" align="center" fontWeight="bold" mb={1}>
+            Program Architecture
+          </Typography>
+          <Typography variant="h6" align="center" color="text.secondary" mb={6}>
+            Inside the Learning Journey
+          </Typography>
         </motion.div>
 
-        <div className="max-w-4xl mx-auto">
+        <Stack spacing={0} sx={{ position: "relative" }}>
           {steps.map((step, index) => (
             <motion.div
               key={index}
-              className="flex gap-6 mb-8"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="flex-shrink-0 w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xl">
-                {step.number}
-              </div>
-              <div>
-                <h3 className="font-bold text-xl mb-2">{step.title}</h3>
-                <p className="text-gray-700">{step.description}</p>
-              </div>
+              <Box sx={{ display: "flex", alignItems: "flex-start", position: "relative", mb: 3 }}>
+                {/* Vertical connector line */}
+                {index !== steps.length - 1 && (
+                  <Box
+                    sx={{
+                      position: "absolute",
+                      left: 28,
+                      top: 60,
+                      width: "2px",
+                      height: "calc(100% - 60px)",
+                      bgcolor: "primary.main",
+                      opacity: 0.3,
+                    }}
+                  />
+                )}
+
+                <Avatar
+                  sx={{
+                    bgcolor: "primary.main",
+                    color: "#fff",
+                    width: 56,
+                    height: 56,
+                    fontWeight: "bold",
+                    fontSize: "1rem",
+                    mr: 3,
+                    zIndex: 1,
+                  }}
+                >
+                  {step.number}
+                </Avatar>
+
+                <Paper
+                  elevation={3}
+                  sx={{
+                    p: 2.5,
+                    backdropFilter: "blur(8px)",
+                    background: "rgba(255,255,255,0.7)",
+                    borderRadius: 3,
+                    flexGrow: 1,
+                    boxShadow: "0 4px 14px rgba(0,0,0,0.1)",
+                    transition: "transform 0.3s ease",
+                    "&:hover": { transform: "translateY(-2px)" },
+                  }}
+                >
+                  <Typography variant="h6" fontWeight={600}>
+                    {step.title}
+                  </Typography>
+                  <Typography variant="body1" color="text.secondary">
+                    {step.description}
+                  </Typography>
+                </Paper>
+              </Box>
             </motion.div>
           ))}
-        </div>
-      </div>
-    </section>
+        </Stack>
+      </Container>
+    </Box>
   )
 }

@@ -2,40 +2,36 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight, Quote, Star, Linkedin } from "lucide-react"
-import { TrendingUp } from "lucide-react"
+import { ChevronLeft, ChevronRight, Quote, Star, Linkedin, TrendingUp } from "lucide-react"
 
 export default function HomeTestimonials() {
   const testimonials = [
     {
-      quote:
-        "The Sales Syllabus Academy program completely transformed my approach to leadership. Within 6 months of completing the program, I was promoted to Head of Sales at my company with a 180% salary increase.",
+      quote: "The Sales Syllabus Academy program completely transformed my approach to leadership. Within 6 months of completing the program, I was promoted to Head of Sales at my company with a 180% salary increase.",
       name: "Rahul Sharma",
       title: "Head of Sales",
       company: "Tech Solutions Inc.",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/placeholder.svg",
       rating: 5,
       results: "180% salary increase",
       linkedin: "#",
     },
     {
-      quote:
-        "Unlike other programs that focus on theory, Sales Syllabus Academy gave me practical frameworks I could apply immediately. The ROI was evident within weeks, and our team's performance improved by 250%.",
+      quote: "Unlike other programs that focus on theory, Sales Syllabus Academy gave me practical frameworks I could apply immediately. The ROI was evident within weeks, and our team's performance improved by 250%.",
       name: "Priya Patel",
       title: "Marketing Director",
       company: "Global Brands Ltd.",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/placeholder.svg",
       rating: 5,
       results: "250% team performance boost",
       linkedin: "#",
     },
     {
-      quote:
-        "As a founder, I needed to develop my leadership team quickly. The program provided exactly what we needed - practical, results-focused training that improved our bottom line by ₹2.5 Cr in the first year.",
+      quote: "As a founder, I needed to develop my leadership team quickly. The program provided exactly what we needed - practical, results-focused training that improved our bottom line by ₹2.5 Cr in the first year.",
       name: "Vikram Mehta",
       title: "Founder & CEO",
       company: "Growth Ventures",
-      image: "/placeholder.svg?height=80&width=80",
+      image: "/placeholder.svg",
       rating: 5,
       results: "₹2.5 Cr revenue impact",
       linkedin: "#",
@@ -44,159 +40,139 @@ export default function HomeTestimonials() {
 
   const [current, setCurrent] = useState(0)
 
-  const nextTestimonial = () => {
-    setCurrent(current === testimonials.length - 1 ? 0 : current + 1)
-  }
-
-  const prevTestimonial = () => {
-    setCurrent(current === 0 ? testimonials.length - 1 : current - 1)
-  }
+  const nextTestimonial = () => setCurrent(current === testimonials.length - 1 ? 0 : current + 1)
+  const prevTestimonial = () => setCurrent(current === 0 ? testimonials.length - 1 : current - 1)
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      nextTestimonial()
-    }, 8000)
-
+    const interval = setInterval(() => nextTestimonial(), 8000)
     return () => clearInterval(interval)
   }, [current])
 
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl"></div>
-        <div className="absolute bottom-20 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl"></div>
-      </div>
-
-      <div className="relative container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-br from-gray-100 via-gray-50 to-white text-gray-800 relative">
+      <div className="container mx-auto px-4 relative">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.5 }}
         >
-          <div className="inline-flex items-center px-4 py-2 bg-blue-600/20 border border-blue-400/30 rounded-full text-blue-300 text-sm font-medium mb-6">
-            Success Stories
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Leaders Who've
-            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              {" "}
-              Transformed
-            </span>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+            Leaders Who’ve <span className="text-blue-600">Transformed</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Real results from professionals who took the leap to leadership excellence
+          <p className="text-gray-500 max-w-xl mx-auto">
+            Real stories from professionals achieving leadership excellence.
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="relative">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
-                initial={{ opacity: 0, x: 100 }}
+                initial={{ opacity: 0, x: 80 }}
                 animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
-                transition={{ duration: 0.5 }}
-                className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12 border border-white/20"
+                exit={{ opacity: 0, x: -80 }}
+                transition={{ duration: 0.4 }}
+                className="bg-white shadow-md rounded-xl p-6 md:p-10 border border-gray-200"
               >
-                <div className="grid md:grid-cols-3 gap-8 items-center">
-                  {/* Quote Section */}
+                <div className="grid md:grid-cols-3 gap-6 items-center">
                   <div className="md:col-span-2">
-                    <Quote className="w-12 h-12 text-blue-400 mb-6" />
+                    <Quote className="w-8 h-8 text-blue-500 mb-4" />
 
-                    {/* Rating */}
-                    <div className="flex items-center mb-6">
+                    <div className="flex items-center mb-4">
                       {[...Array(testimonials[current].rating)].map((_, i) => (
-                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                       ))}
                     </div>
 
-                    <blockquote className="text-xl md:text-2xl leading-relaxed mb-8 text-gray-100">
+                    <blockquote className="text-lg md:text-xl text-gray-700 mb-6">
                       "{testimonials[current].quote}"
                     </blockquote>
 
-                    {/* Results Badge */}
-                    <div className="inline-flex items-center px-4 py-2 bg-green-500/20 border border-green-400/30 rounded-full text-green-300 text-sm font-medium mb-6">
+                    <div className="inline-flex items-center px-3 py-1.5 bg-green-100 text-green-700 text-sm rounded-full font-medium">
                       <TrendingUp className="w-4 h-4 mr-2" />
                       {testimonials[current].results}
                     </div>
                   </div>
 
-                  {/* Profile Section */}
                   <div className="text-center md:text-left">
-                    <div className="relative inline-block mb-6">
+                    <div className="relative inline-block mb-4">
                       <img
-                        src={testimonials[current].image || "/placeholder.svg"}
+                        src={testimonials[current].image}
                         alt={testimonials[current].name}
-                        className="w-24 h-24 rounded-full border-4 border-white/20"
+                        className="w-20 h-20 rounded-full border-2 border-gray-300"
                       />
-                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                      <a
+                        href={testimonials[current].linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute -bottom-2 -right-2 w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center"
+                      >
                         <Linkedin className="w-4 h-4 text-white" />
-                      </div>
+                      </a>
                     </div>
 
-                    <h4 className="text-2xl font-bold text-white mb-2">{testimonials[current].name}</h4>
-                    <p className="text-blue-300 font-medium mb-1">{testimonials[current].title}</p>
-                    <p className="text-gray-400">{testimonials[current].company}</p>
+                    <h4 className="text-lg font-semibold">{testimonials[current].name}</h4>
+                    <p className="text-blue-600 text-sm">{testimonials[current].title}</p>
+                    <p className="text-gray-500 text-sm">{testimonials[current].company}</p>
                   </div>
                 </div>
               </motion.div>
             </AnimatePresence>
 
             {/* Navigation */}
-            <div className="flex justify-center items-center mt-8 gap-6">
+            <div className="flex justify-center mt-6 gap-4">
               <button
                 onClick={prevTestimonial}
-                className="p-3 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
-                aria-label="Previous testimonial"
+                className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-100 transition"
+                aria-label="Previous"
               >
-                <ChevronLeft className="w-6 h-6" />
+                <ChevronLeft className="w-5 h-5 text-gray-600" />
               </button>
 
-              <div className="flex gap-3">
+              <div className="flex gap-2">
                 {testimonials.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrent(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      current === index ? "bg-blue-400 w-8" : "bg-white/30 hover:bg-white/50"
+                    className={`w-2.5 h-2.5 rounded-full transition-all duration-200 ${
+                      current === index ? "bg-blue-500 w-6" : "bg-gray-300 hover:bg-gray-400"
                     }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
+                    aria-label={`Testimonial ${index + 1}`}
                   />
                 ))}
               </div>
 
               <button
                 onClick={nextTestimonial}
-                className="p-3 rounded-full bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all duration-300 hover:scale-110"
-                aria-label="Next testimonial"
+                className="p-2 rounded-full bg-white border border-gray-200 hover:bg-gray-100 transition"
+                aria-label="Next"
               >
-                <ChevronRight className="w-6 h-6" />
+                <ChevronRight className="w-5 h-5 text-gray-600" />
               </button>
             </div>
           </div>
         </div>
 
-        {/* Trust Indicators */}
+        {/* Trust Logos
         <motion.div
-          className="mt-16 text-center"
+          className="mt-14 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <p className="text-gray-400 mb-6">Trusted by professionals from</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            <div className="text-2xl font-bold">Microsoft</div>
-            <div className="text-2xl font-bold">Google</div>
-            <div className="text-2xl font-bold">Amazon</div>
-            <div className="text-2xl font-bold">Flipkart</div>
-            <div className="text-2xl font-bold">Zomato</div>
+          <p className="text-gray-400 mb-4">Trusted by professionals from</p>
+          <div className="flex flex-wrap justify-center gap-6 text-gray-500 text-base font-medium">
+            <span>Microsoft</span>
+            <span>Google</span>
+            <span>Amazon</span>
+            <span>Flipkart</span>
+            <span>Zomato</span>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   )
