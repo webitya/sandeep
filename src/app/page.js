@@ -12,16 +12,6 @@ import HomePageWho from "../Components/HomePage/HomePageWho"
 import HomeRecruitment from "../Components/HomePage/HomeRecruitment"
 // ===================================================================
 
-import HomeHero from "@/components/HomePageV2/HomeHero"
-import HomeAbout from "@/components/HomePageV2/HomeAbout"
-import HomeFeatures from "@/components/HomePageV2/HomeFeatures"
-import HomeAudience from "@/components/HomePageV2/HomeAudience"
-import HomeComparison from "@/components/HomePageV2/HomeComparison"
-import HomeProgramArchitecture from "@/components/HomePageV2/HomeProgramArchitecture"
-import HomeFAQ from "@/components/HomePageV2/HomeFAQ"
-import HomeTestimonials from "@/components/HomePageV2/HomeTestimonials"
-import HomeCTA from "@/components/HomePageV2/HomeCTA"
-
 const HomePage=()=>{
   return (
     <>
@@ -36,15 +26,7 @@ const HomePage=()=>{
       <HomePageTestimonials/>
       <HomePageFAQSection/>
       <HomePageCTA/>
-       {/* <HomeHero />
-      <HomeAbout />
-      <HomeFeatures />
-      <HomeAudience />
-      <HomeComparison />
-      <HomeProgramArchitecture />
-      <HomeFAQ />
-      <HomeTestimonials />
-      <HomeCTA /> */}
+ 
       <FooterEl/>
     </>
   )
