@@ -33,13 +33,14 @@ const NavbarEl3 = () => {
   const menus = [
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about-us' },
-    { label: 'Services', href: '/services' }
+    { label: 'Our Programs', href: '/programs' },
+     { label: 'Revenue Pilot', href: '/revenue-pilot' },
+    { label: 'Faqs', href: '/faqs' },
+   
     
   ];
 
   const menus1 = [
-    { label: 'Remote Marketing Team', href: '/remote-marketing-team' },
-    { label: 'Faqs', href: '/faqs' },
     { label: 'Contact Us', href: '/contact-us' }
   ];
 
@@ -172,14 +173,14 @@ const NavbarEl3 = () => {
             ))}
 
             {/* CTA Button */}
-            <Link href="/academic" target="_blank">
+            <Link href="https://calendly.com/salessyllabus" target="_blank">
               <Button
                 variant="contained"
                 size="small"
                 sx={{ bgcolor: '#007BFF', textTransform: 'none', fontWeight: 600 }}
                 endIcon={<EditNote />}
               >
-                Academic
+                Book Appointment
               </Button>
             </Link>
           </div>
