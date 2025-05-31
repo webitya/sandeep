@@ -57,6 +57,10 @@ const FooterEl = () => {
             ['Case Studies', '/case-studies'],
             ['FAQs', '/faqs'],
             ['Contact Us', '/contact-us'],
+             ['HomePage V2', '/homepageV2'],
+            ['About Us V2', '/about'],
+            ['Our Programs V2', '/programs'],
+            ['Revenue Pilot V2', '/revenue-pilot'],
           ].map(([label, path]) => (
             <FooterLink key={label} href={path}>{label}</FooterLink>
           ))}

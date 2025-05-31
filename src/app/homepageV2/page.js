@@ -25,7 +25,7 @@ import HomeCTA from "@/components/HomePageV2/HomeCTA"
 const HomePage=()=>{
   return (
     <>
-      <HomePageHeroSection/>
+      {/* <HomePageHeroSection/>
       <HomePageCompany/>
       <HomePageWho/>
       <HomePageRevenueTeamFramework/>
@@ -35,8 +35,8 @@ const HomePage=()=>{
       <HomeFullValueDelivered/>
       <HomePageTestimonials/>
       <HomePageFAQSection/>
-      <HomePageCTA/>
-       {/* <HomeHero />
+      <HomePageCTA/> */}
+       <HomeHero />
       <HomeAbout />
       <HomeFeatures />
       <HomeAudience />
@@ -44,7 +44,7 @@ const HomePage=()=>{
       <HomeProgramArchitecture />
       <HomeFAQ />
       <HomeTestimonials />
-      <HomeCTA /> */}
+      <HomeCTA />
       <FooterEl/>
     </>
   )
