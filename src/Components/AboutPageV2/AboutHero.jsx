@@ -34,7 +34,7 @@ export default function AboutHero() {
               </motion.div>
 
               <motion.h1
-                className="text-5xl md:text-6xl font-bold leading-tight mb-8"
+                className="text-4xl md:text-4xl font-bold leading-tight mb-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
@@ -47,7 +47,7 @@ export default function AboutHero() {
               </motion.h1>
 
               <motion.h2
-                className="text-2xl md:text-3xl font-semibold mb-8 text-gray-300"
+                className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -56,7 +56,7 @@ export default function AboutHero() {
               </motion.h2>
 
               <motion.p
-                className="text-xl leading-relaxed mb-10 text-gray-300"
+                className="text-xl leading-relaxed mb-4 text-gray-300"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
@@ -92,7 +92,7 @@ export default function AboutHero() {
                   <Award className="w-12 h-12 text-white" />
                 </div>
 
-                <h3 className="text-2xl font-bold mb-6">Our Foundation</h3>
+                <h3 className="text-2xl font-bold mb-4">Our Foundation</h3>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-green-400 rounded-full mr-3"></div>
