@@ -1,7 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { X, CheckCircle } from "lucide-react"
+import { motion } from "framer-motion";
+import CancelIcon from "@mui/icons-material/Cancel";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 export default function RevenuePilotProblem() {
   const problems = [
@@ -9,28 +10,29 @@ export default function RevenuePilotProblem() {
     "High salary, low ROI",
     "Weak people management & domain leadership",
     "No structured upskilling path for mid-career leaders",
-  ]
+  ];
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="relative py-20 bg-gradient-to-br from-[#e6f0f8] via-[#f4f6f8] to-[#e9edf0]">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
-          className="max-w-4xl mx-auto"
+          className="max-w-5xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">❌ The Industry's Leadership Gap</h2>
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">🚫 The Industry’s Leadership Gap</h2>
             <p className="text-lg text-gray-700">
-              Most SMEs hire sales leaders with high expectations—but see poor outcomes:
+              Most SMEs hire sales leaders with high hopes—but results often fall short:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-red-50 p-8 rounded-lg border border-red-200">
-              <h3 className="text-xl font-bold mb-6 text-red-800">Common Problems:</h3>
+            {/* Problems Section */}
+            <div className="p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-red-700 mb-6">Common Pitfalls</h3>
               <div className="space-y-4">
                 {problems.map((problem, index) => (
                   <motion.div
@@ -41,24 +43,25 @@ export default function RevenuePilotProblem() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    <X className="w-6 h-6 text-red-600 mr-3 flex-shrink-0 mt-1" />
-                    <p className="text-red-700">{problem}</p>
+                    <CancelIcon className="text-red-600 mr-3 mt-1" />
+                    <p className="text-gray-800">{problem}</p>
                   </motion.div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-green-50 p-8 rounded-lg border border-green-200">
-              <h3 className="text-xl font-bold mb-6 text-green-800">✅ We Fix That with Trained Leadership</h3>
+            {/* Solution Section */}
+            <div className="p-8 bg-white rounded-2xl shadow-lg border border-gray-100">
+              <h3 className="text-xl font-semibold text-green-700 mb-6">Our Solution: Trained Sales Leadership</h3>
               <div className="space-y-4">
-                <p className="text-green-700 font-medium">
-                  There's no IIM or Harvard for Sales Heads in SMEs. So we built one.
+                <p className="text-gray-700 font-medium">
+                  There’s no IIM or Harvard for SME Sales Heads. So we built one.
                 </p>
                 <div className="flex items-start">
-                  <CheckCircle className="w-6 h-6 text-green-600 mr-3 flex-shrink-0 mt-1" />
-                  <p className="text-green-700">
-                    Sales Syllabus combines strategic learning, talent grooming, and organizational alignment to ensure
-                    your sales leader is 100% ready for the real world.
+                  <CheckCircleIcon className="text-green-600 mr-3 mt-1" />
+                  <p className="text-gray-800">
+                    Our Sales Syllabus blends strategic learning, talent grooming, and alignment with your business
+                    model—ensuring your sales leader is fully prepared for real-world growth execution.
                   </p>
                 </div>
               </div>
@@ -67,5 +70,5 @@ export default function RevenuePilotProblem() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

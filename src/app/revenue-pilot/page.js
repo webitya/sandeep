@@ -5,6 +5,7 @@ import RevenuePilotGuarantee from "../../Components/RevenuePilotPageV2/RevenuePi
 import RevenuePilotAudience from "../../Components/RevenuePilotPageV2/RevenuePilotAudience"
 import RevenuePilotCTA from "../../Components/RevenuePilotPageV2/RevenuePilotCTA"
 import FooterEl from "@/Components/FooterEl"
+import WhyRevenuePilotWorks from "../../Components/RevenuePilotPageV2/RevenuePilotWorks"
 
 export const metadata = {
   title: "RevenuePilot - Sales Syllabus Academy",
@@ -18,6 +19,7 @@ export default function RevenuePilotPage() {
       <RevenuePilotDeliverables />
       <RevenuePilotProblem />
       <RevenuePilotGuarantee />
+      <WhyRevenuePilotWorks/>
       <RevenuePilotAudience />
       <RevenuePilotCTA />
       <FooterEl/>
