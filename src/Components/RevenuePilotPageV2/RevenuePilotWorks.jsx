@@ -36,8 +36,8 @@ export default function WhyRevenuePilotWorks() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            🔍 Why RevenuePilot Works
+          <h2 className="text-3xl md:text-4xl  text-center text-gray-900 mb-12">
+            Why RevenuePilot Works
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -53,7 +53,7 @@ export default function WhyRevenuePilotWorks() {
                 <div className="flex items-start mb-4">
                   <div className="mr-4">{feature.icon}</div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900">{feature.title}</h3>
+                    <h3 className="text-lg  text-gray-900">{feature.title}</h3>
                     <p className="text-gray-700 mt-1">{feature.description}</p>
                   </div>
                 </div>

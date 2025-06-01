@@ -28,50 +28,50 @@ export default function RevenuePilotGuarantee() {
   ];
 
   return (
-    <section className="relative py-24 bg-gradient-to-r from-white via-[#f8fbfc] to-white">
-      <div className="container mx-auto px-6">
-        <motion.div
-          className="max-w-5xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="text-center mb-16">
-            <h2 className="text-4xl  text-gray-900 mb-4 tracking-tight">
-              100% Success Guarantee
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We don’t stop at hiring — we drive outcomes.
-            </p>
-          </div>
+    <section className="w-full py-16 px-6 md:px-20 bg-gradient-to-br from-[#f7fafd] to-[#eaf3fc] backdrop-blur-sm">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="w-full max-w-6xl mx-auto"
+      >
+        <div className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl  text-gray-900 tracking-tight">
+            100% Success Guarantee
+          </h2>
+          <p className="text-base md:text-lg text-gray-700 mt-1">
+            We don’t stop at hiring — we drive outcomes.
+          </p>
+        </div>
 
-          <div className="space-y-10">
-            {guaranteeFeatures.map((feature, index) => (
-              <motion.div
-                key={index}
-                className="flex items-start gap-4"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              >
-                <div className="mt-1">{feature.icon}</div>
-                <p className="text-lg text-gray-800">{feature.text}</p>
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid gap-4 sm:gap-5">
+          {guaranteeFeatures.map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="flex items-start gap-3"
+            >
+              <div className="mt-1">{feature.icon}</div>
+              <p className="text-sm md:text-base text-gray-800 leading-snug">
+                {feature.text}
+              </p>
+            </motion.div>
+          ))}
+        </div>
 
-          <div className="border-t border-gray-200 mt-16 pt-8 text-center">
-            <p className="text-xl font-semibold text-gray-900">
-              No guesswork. No trial-and-error. Just results.
-            </p>
-            <p className="text-sm text-gray-500 mt-2">
-              *Terms apply for replacement conditions.
-            </p>
-          </div>
-        </motion.div>
-      </div>
+        <div className="mt-10 text-center">
+          <p className="text-base md:text-lg font-medium text-gray-900">
+            No guesswork. No trial-and-error. Just results.
+          </p>
+          <p className="text-xs text-gray-500 mt-1 italic">
+            *Terms apply for replacement conditions.
+          </p>
+        </div>
+      </motion.div>
     </section>
   );
 }
