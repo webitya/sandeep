@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion"
 import { ArrowRight, Play, Award, Users, TrendingUp } from "lucide-react"
-
+import DownloadIcon from '@mui/icons-material/Download';
+import Link from "next/link";
 export default function HomeHero() {
   const stats = [
     { icon: <Users className="w-6 h-6 text-blue-600" />, value: "300+", label: "Consulting Projects" },
@@ -52,15 +53,17 @@ export default function HomeHero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <button className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
+                <Link href="/contact-us" target="_blank">
+                <button style={{cursor:"pointer"}} className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
                   Book a Free Strategy Session
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
+                </Link>
 
-                <button className="group bg-white/50 backdrop-blur-md border border-white/30 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-white/70 transition-all duration-300 flex items-center justify-center">
-                  <Play className="w-5 h-5 mr-2" />
-                  Watch Demo
-                </button>
+               <Link href="/case-studies" target="_blank"  > <button style={{cursor:"pointer"}} className="group bg-white/50 backdrop-blur-md border border-white/30 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-white/70 transition-all duration-300 flex items-center justify-center">
+  <DownloadIcon className="text-blue-600 mr-2" />
+  Case Study
+</button></Link>
               </motion.div>
 
               <motion.div

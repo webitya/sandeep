@@ -19,7 +19,7 @@ export default function ProgramsCTA() {
           </p>
 
           <a
-            href="#"
+            href="/contact-us"
             className="bg-blue-600 text-white px-8 py-4 rounded-md font-bold hover:bg-blue-700 transition-colors inline-block"
           >
             Book a Free Strategy Session

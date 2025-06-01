@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Shield, Target, TrendingUp, ArrowRight, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 export default function RevenuePilotHero() {
   const guarantees = [
@@ -61,14 +62,18 @@ export default function RevenuePilotHero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
+                <Link href="/contact-us">
                 <button className="group bg-blue-600 text-white px-8 py-4 rounded-md font-semibold hover:bg-blue-700 transition duration-300 shadow-md flex items-center justify-center">
                   Get Your Sales Leader
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
+                </Link>
 
+                <Link href="/case-studies">
                 <button className="bg-gray-100 text-gray-800 px-8 py-4 rounded-md font-semibold hover:bg-gray-200 transition duration-300 border border-gray-300">
                   View Success Stories
                 </button>
+                </Link>
               </motion.div>
             </div>
 

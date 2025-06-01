@@ -88,7 +88,7 @@ export default function AboutHero() {
           <ul className="space-y-4 text-gray-700 font-medium">
             <li className="flex items-center gap-3">
               <span className="w-3 h-3 bg-[#10B981] rounded-full shadow-sm" />
-              Strategic Consulting Engagements
+              Learning from real market data
             </li>
             <li className="flex items-center gap-3">
               <span className="w-3 h-3 bg-[#1D4ED8] rounded-full shadow-sm" />
