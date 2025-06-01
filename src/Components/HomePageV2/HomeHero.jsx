@@ -19,9 +19,9 @@ export default function HomeHero() {
         <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-white/20 rounded-full filter blur-2xl animate-pulse delay-2000"></div>
       </div>
 
-      <div className="relative container mx-auto px-4 pt-20 pb-32">
+      <div className="relative mx-auto px-4 pt-20 pb-10">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12  items-center">
             {/* Left Content */}
             <div>
               <motion.h1
@@ -107,7 +107,7 @@ export default function HomeHero() {
                   </div>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-white/30">
+                <div className="mt-3 pt-6 border-t border-white/30">
                   <div className="flex items-center justify-between">
                     <span className="text-gray-600">Success Rate</span>
                     <span className="text-2xl font-bold text-green-500">95%</span>

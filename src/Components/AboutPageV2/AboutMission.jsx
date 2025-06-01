@@ -1,64 +1,80 @@
-"use client"
+'use client'
 
 import { motion } from "framer-motion"
 import { Target, TrendingUp, Users } from "lucide-react"
 
 export default function AboutMission() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <motion.div
-          className="max-w-4xl mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why We Exist</h2>
-            <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              We saw a critical gap: experienced professionals were hitting growth ceilings—not due to lack of effort,
-              but because they lacked access to the right strategic exposure, frameworks, and leadership clarity.
-            </p>
+    <section className="relative py-20 px-4 bg-gradient-to-b from-[#F9FAFB] via-[#F1F5F9] to-white text-gray-800 overflow-hidden">
+      {/* Gradient Glows */}
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute w-[22rem] h-[22rem] bg-blue-100 rounded-full top-8 left-10 blur-[120px] opacity-30" />
+        <div className="absolute w-[18rem] h-[18rem] bg-indigo-100 rounded-full bottom-0 right-10 blur-[100px] opacity-20" />
+      </div>
+
+      <motion.div
+        className=" mx-auto"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+      >
+        {/* Heading */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-4xl text-gray-900 mb-6">
+            Why We Exist
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            We saw a critical gap: experienced professionals were hitting growth ceilings—not due to lack of effort,
+            but because they lacked access to the right strategic exposure, frameworks, and leadership clarity.
+          </p>
+        </div>
+
+        {/* Main Grid */}
+        <div className="grid md:grid-cols-2 gap-10 items-start">
+          {/* Problem + Solution */}
+          <div className="space-y-8">
+            <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-6 shadow-md hover:shadow-lg transition">
+              <h3 className="font-semibold text-xl text-red-700 mb-2">The Problem</h3>
+              <p className="text-gray-700">Traditional institutions teach theory, not business reality.</p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 bg-white/70 backdrop-blur-md p-6 shadow-md hover:shadow-lg transition">
+              <h3 className="font-semibold text-xl text-green-700 mb-2">Our Solution</h3>
+              <p className="text-gray-700">We teach what actually works in business today—with strategic relevance.</p>
+            </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="bg-red-50 border-l-4 border-red-500 p-6 mb-6">
-                <h3 className="font-bold text-xl mb-2 text-red-800">The Problem</h3>
-                <p className="text-red-700">Traditional institutions teach theory.</p>
-              </div>
-              <div className="bg-green-50 border-l-4 border-green-500 p-6">
-                <h3 className="font-bold text-xl mb-2 text-green-800">Our Solution</h3>
-                <p className="text-green-700">We teach what actually works in business today.</p>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div className="flex items-start">
-                <Target className="w-8 h-8 text-blue-600 mr-4 flex-shrink-0 mt-1" />
+          {/* Value Points */}
+          <div className="space-y-8">
+            {[{
+              Icon: Target,
+              title: "Strategic Exposure",
+              desc: "Real-world frameworks built from live business consulting challenges.",
+              color: "from-blue-500 to-blue-700"
+            }, {
+              Icon: TrendingUp,
+              title: "Leadership Clarity",
+              desc: "Clear thinking pathways to develop executive-level decision-making.",
+              color: "from-indigo-500 to-indigo-700"
+            }, {
+              Icon: Users,
+              title: "Practical Application",
+              desc: "Business strategies you can apply immediately within your role or company.",
+              color: "from-emerald-500 to-emerald-700"
+            }].map(({ Icon, title, desc, color }, i) => (
+              <div key={i} className="flex items-start gap-4">
+                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${color} text-white flex items-center justify-center shadow-md`}>
+                  <Icon className="w-6 h-6" />
+                </div>
                 <div>
-                  <h4 className="font-bold text-lg mb-2">Strategic Exposure</h4>
-                  <p className="text-gray-700">Real-world frameworks from actual business challenges</p>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-1">{title}</h4>
+                  <p className="text-gray-600">{desc}</p>
                 </div>
               </div>
-              <div className="flex items-start">
-                <TrendingUp className="w-8 h-8 text-blue-600 mr-4 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-bold text-lg mb-2">Leadership Clarity</h4>
-                  <p className="text-gray-700">Clear pathways to executive-level thinking</p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <Users className="w-8 h-8 text-blue-600 mr-4 flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-bold text-lg mb-2">Practical Application</h4>
-                  <p className="text-gray-700">Immediate implementation in your current role</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   )
 }
