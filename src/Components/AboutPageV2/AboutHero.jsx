@@ -19,14 +19,14 @@ export default function AboutHero() {
     },
     {
       icon: <Target className="w-5 h-5 text-[#6B7280]" />, // gray
-      value: "2000+",
+      value: "500+",
       label: "Leaders Trained",
       bg: "bg-[#E5E7EB]/40"
     },
     {
       icon: <TrendingUp className="w-5 h-5 text-[#10B981]" />,
-      value: "₹500Cr+",
-      label: "Revenue Impact",
+      value: "₹100Cr+",
+      label: "Revenue Impacted",
       bg: "bg-[#D1FAE5]/40"
     }
   ]
