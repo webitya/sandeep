@@ -26,9 +26,9 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
   const navigationLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
-    { label: "Services", href: "/services" },
-    { label: "Remote Marketing Team", href: "/remote-marketing-team" },
-     { label: "Academic", href: "/academic" },
+    { label: "Our Programs", href: "/programs" },
+    { label: "Revenue Pilot", href: "/revenue-pilot" },
+    //  { label: "Academic", href: "/academic" },
     { label: "Contact Us", href: "/contact-us" },
     // {
     //   label: "All Services",
