@@ -60,10 +60,15 @@ export default function HomeHero() {
                 </button>
                 </Link>
 
-               <Link href="/case-studies" target="_blank"  > <button style={{cursor:"pointer"}} className="group bg-white/50 backdrop-blur-md border border-white/30 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-white/70 transition-all duration-300 flex items-center justify-center">
+               <a
+  href="/Case%20Study%20-HOD%20sales%20-S1.pdf"
+  download
+  className="group bg-white/50 backdrop-blur-md border border-white/30 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-white/70 transition-all duration-300 flex items-center justify-center cursor-pointer"
+>
   <DownloadIcon className="text-blue-600 mr-2" />
   Case Study
-</button></Link>
+</a>
+
               </motion.div>
 
               <motion.div
