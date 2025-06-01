@@ -39,10 +39,10 @@ const FooterEl = () => {
         <FooterColumn title="Our Links">
           {[
             ['Home', '/'],
-            ['Academic', '/academic'],
             ['About Us', '/about-us'],
-            ['Services', '/services'],
-            ['Remote Marketing Team', '/remote-marketing-team'],
+            ['Our Programs', '/our-programs'],
+            ['Revenue Pilot', '/revenue-pilot'],
+            ['Contact Us', '/contact-us'],
            
           ].map(([label, path]) => (
             <FooterLink key={label} href={path}>{label}</FooterLink>
@@ -50,17 +50,17 @@ const FooterEl = () => {
         </FooterColumn>
 
         {/* Get In Touch */}
-        <FooterColumn title="Get In Touch">
+        <FooterColumn title="Resources">
           {[
             ['Free Resources', '/free-resources'],
             ['Blogs', '/blogs'],
             ['Case Studies', '/case-studies'],
             ['FAQs', '/faqs'],
-            ['Contact Us', '/contact-us'],
-             ['HomePage V2', '/homepageV2'],
-            ['About Us V2', '/about'],
-            ['Our Programs V2', '/programs'],
-            ['Revenue Pilot V2', '/revenue-pilot'],
+            // ['Contact Us', '/contact-us'],
+            //  ['HomePage V2', '/homepageV2'],
+            // ['About Us V2', '/about'],
+            // ['Our Programs V2', '/programs'],
+            // ['Revenue Pilot V2', '/revenue-pilot'],
           ].map(([label, path]) => (
             <FooterLink key={label} href={path}>{label}</FooterLink>
           ))}
