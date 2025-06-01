@@ -55,7 +55,7 @@ const FooterEl = () => {
             ['Free Resources', '/free-resources'],
             ['Blogs', '/blogs'],
             ['Case Studies', '/case-studies'],
-            ['FAQs', '/faqs'],
+            // ['FAQs', '/faqs'],
             // ['Contact Us', '/contact-us'],
             //  ['HomePage V2', '/homepageV2'],
             // ['About Us V2', '/about'],

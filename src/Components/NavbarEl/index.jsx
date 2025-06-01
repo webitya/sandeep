@@ -35,7 +35,7 @@ const NavbarEl3 = () => {
     { label: 'About Us', href: '/about-us' },
     { label: 'Our Programs', href: '/programs' },
      { label: 'Revenue Pilot', href: '/revenue-pilot' },
-    { label: 'Faqs', href: '/faqs' },
+    // { label: 'Faqs', href: '/faqs' },
    
     
   ];
