@@ -90,10 +90,8 @@ const FooterEl = () => {
       </div>
 
       <div className="bg-gray-200 text-center py-4 text-xs">
-        © 2024 Sales Syllabus. All rights reserved. | Secured by{' '}
-        <a href="https://webitya.com" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
-          Webitya
-        </a>
+        © 2024 Sales Syllabus. All rights reserved.
+       
       </div>
     </footer>
   );
