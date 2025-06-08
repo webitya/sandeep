@@ -30,10 +30,10 @@ const SubscribeForm = () => {
 
     emailjs
       .sendForm(
-        'your_service_id', // 🔁 Replace with your EmailJS Service ID
-        'your_template_id', // 🔁 Replace with your Template ID
+        'service_evnh226', // 🔁 Replace with your EmailJS Service ID
+        'template_43ycn0v', // 🔁 Replace with your Template ID
         form.current,
-        'your_public_key' // 🔁 Replace with your EmailJS Public Key
+        'aHWw0G5vVDW9ORqW2' // 🔁 Replace with your EmailJS Public Key
       )
       .then(
         () => {
