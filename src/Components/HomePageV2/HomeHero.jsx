@@ -53,9 +53,9 @@ export default function HomeHero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <Link href="/contact-us" target="_blank">
+                <Link href="https://calendly.com/salessyllabus" target="_blank">
                 <button style={{cursor:"pointer"}} className="group bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
-                  Book a Free Strategy Session
+                 Talk to Our team 
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </button>
                 </Link>
@@ -66,7 +66,7 @@ export default function HomeHero() {
   className="group bg-white/50 backdrop-blur-md border border-white/30 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-white/70 transition-all duration-300 flex items-center justify-center cursor-pointer"
 >
   <DownloadIcon className="text-blue-600 mr-2" />
-  Case Study
+  Free case study trial.
 </a>
 
               </motion.div>

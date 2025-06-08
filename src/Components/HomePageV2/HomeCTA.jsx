@@ -20,7 +20,7 @@ export default function HomeCTA() {
 
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <a
-              href="/contact-us"
+              href="https://calendly.com/salessyllabus"
               className="bg-white text-blue-600 px-8 py-4 rounded-md font-bold hover:bg-blue-50 transition-colors"
             >
               Book a Free Strategy Session

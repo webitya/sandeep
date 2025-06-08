@@ -26,7 +26,7 @@ export default function AboutCTA() {
               Explore Our Programs
             </a>
             <a
-              href="/contact-us"
+              href="https://calendly.com/salessyllabus"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-bold hover:bg-white/10 transition-colors"
             >
               Book a Strategy Session

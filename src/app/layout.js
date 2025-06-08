@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavbarEl3 from "@/Components/NavbarEl";
+import NavbarEl3 from "../Components/NavbarEl";
 import FooterEl from "@/Components/FooterEl";
 import ChatBot from "@/Components/ChatBot";
 
