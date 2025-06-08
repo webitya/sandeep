@@ -30,10 +30,10 @@ const ContactUsEl = () => {
     setLoading(true);
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_evnh226',
+        'template_43ycn0v',
         formData,
-        'YOUR_PUBLIC_KEY'
+        'aHWw0G5vVDW9ORqW2'
       );
       alert('Message sent successfully!');
       setFormData({
