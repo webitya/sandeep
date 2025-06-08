@@ -20,6 +20,7 @@ import HomeProgramArchitecture from "../Components/HomePageV2/HomeProgramArchite
 import HomeFAQ from "../Components/HomePageV2/HomeFAQ"
 import HomeTestimonials from "../Components/HomePageV2/HomeTestimonials"
 import HomeCTA from "../Components/HomePageV2/HomeCTA"
+import HomePageCompany from "@/Components/HomePage/HomePageCompany"
 
 const HomePage=()=>{
   return (
@@ -36,6 +37,7 @@ const HomePage=()=>{
       <HomePageFAQSection/>
       <HomePageCTA/> */}
       <HomeHero/>
+       <HomePageCompany/>
       <HomeAbout/>
       <HomeFeatures/>
       <HomeAudience/>
