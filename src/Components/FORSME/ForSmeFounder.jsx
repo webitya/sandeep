@@ -18,7 +18,7 @@ export default function ForSmeFounder() {
             </h2>
             <div className="space-y-4 text-gray-700">
               <p className="text-lg">
-                Quick background on Sales Syllabus and 100+ SMEs helped
+                {/* Quick background on Sales Syllabus and 100+ SMEs helped */}
               </p>
               <Link
                 href="/case-studies"
