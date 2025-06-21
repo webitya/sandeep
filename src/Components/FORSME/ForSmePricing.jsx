@@ -62,7 +62,7 @@ export default function ForSmePricing() {
               </ul>
 
               <Link
-                href="/book-call-quote"
+                href="/contact-us"
                 className={`w-full py-3 rounded-lg transition-colors font-semibold text-center block ${
                   plan.featured ? "bg-white text-blue-600 hover:bg-blue-50" : "bg-blue-600 text-white hover:bg-blue-700"
                 }`}

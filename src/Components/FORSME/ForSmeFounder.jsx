@@ -21,7 +21,7 @@ export default function ForSmeFounder() {
                 Quick background on Sales Syllabus and 100+ SMEs helped
               </p>
               <Link
-                href="/success-stories"
+                href="/case-studies"
                 className="text-blue-600 hover:text-blue-800 underline font-medium transition"
               >
                 View success stories →

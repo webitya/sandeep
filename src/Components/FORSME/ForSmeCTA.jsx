@@ -26,14 +26,14 @@ export default function ForSmeCTA() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
-            href="/apply-now"
+            href="/contact-us"
             className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg text-base font-semibold transition-all duration-200 flex items-center justify-center gap-2 shadow"
           >
             Apply Now
             <ArrowForward className="w-5 h-5" />
           </Link>
           <Link
-            href="/book-discovery-call"
+            href="/contact-us"
             className="bg-blue-500 hover:bg-blue-400 text-white px-8 py-3 rounded-lg text-base font-semibold transition-all duration-200 flex items-center justify-center gap-2 border-2 border-blue-400 hover:border-blue-300"
           >
             <Phone className="w-5 h-5" />

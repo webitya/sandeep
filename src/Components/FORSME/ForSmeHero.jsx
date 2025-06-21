@@ -19,14 +19,14 @@ export default function ForSmeHero() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
-                href="/apply-for-program"
+                href="/contact-us"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition-all flex items-center justify-center space-x-2 shadow-md"
               >
                 <span>Apply for the Program</span>
                 <ArrowForward className="w-5 h-5" />
               </Link>
               <Link
-                href="/book-discovery-call"
+                href="/contact-us"
                 className="bg-white hover:bg-gray-50 text-blue-600 px-6 py-3 rounded-md font-semibold transition-all flex items-center justify-center space-x-2 border border-blue-200"
               >
                 <Phone className="w-5 h-5" />
