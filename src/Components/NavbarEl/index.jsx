@@ -34,6 +34,7 @@ const NavbarEl3 = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about-us' },
     { label: 'Our Programs', href: '/programs' },
+    { label: 'For SME', href: '/for-sme' },
      { label: 'Revenue Pilot', href: '/revenue-pilot' },
     // { label: 'Faqs', href: '/faqs' },
    
@@ -151,7 +152,7 @@ const NavbarEl3 = () => {
               {isResourcesOpen && (
                 <div className="absolute top-full left-0 bg-white shadow-lg rounded-lg p-4 z-50">
                   <div className="flex flex-col space-y-1">
-                    <Link href="/case-studies" className="text-sm text-gray-700 hover:text-blue-600">Case Studies</Link>
+                    <Link href="/case-studies" className="text-sm text-gray-700 hover:text-blue-600">Success Story</Link>
                     <Link href="/free-resources" className="text-sm text-gray-700 hover:text-blue-600">Free Resources</Link>
                     <Link href="/blogs" className="text-sm text-gray-700 hover:text-blue-600">Blogs</Link>
                   </div>

@@ -68,7 +68,7 @@ const CustomDrawer = ({ toggleDrawer, isDrawerOpen }) => {
       label: "Resources",
       submenu: [
         // { label: "FAQs", href: "/faqs" },
-        { label: "Case Studies", href: "/case-studies" },
+        { label: "Success Story", href: "/case-studies" },
         { label: "Blogs", href: "/blogs" },
         { label: "Free Resources", href: "/free-resources" },
       ],

@@ -31,11 +31,11 @@ export default function HomeHero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                Learn to Lead
+                Sales & Marketing Mastery Platform
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent block">
-                  Sales, Marketing & Business Teams
+                  Master Sales, Lead Marketing, Drive Business
                 </span>
-                <span className="text-gray-800"> That Scale Revenue</span>
+                {/* <span className="text-gray-800"> That Scale Revenue</span> */}
               </motion.h1>
 
               <motion.p
@@ -60,14 +60,14 @@ export default function HomeHero() {
                 </button>
                 </Link>
 
-               <a
-  href="/Case%20Study%20-HOD%20sales%20-S1.pdf"
-  download
-  className="group bg-white/50 backdrop-blur-md border border-white/30 text-gray-800 px-8 py-4 rounded-lg font-semibold hover:bg-white/70 transition-all duration-300 flex items-center justify-center cursor-pointer"
->
-  <DownloadIcon className="text-blue-600 mr-2" />
-  Free case study trial.
-</a>
+                 <a
+      href="/Case%20Study%20-HOD%20sales%20-S1.pdf"
+      download
+      className="group inline-flex  items-center justify-center px-6 py-3 rounded-xl border border-white/30 bg-white/40 backdrop-blur-md text-gray-800 font-semibold transition-all duration-300 hover:bg-white/70 shadow-md hover:shadow-lg"
+    >
+      <DownloadIcon className="text-blue-600 mr-2 group-hover:animate-bounce transition-transform duration-300" />
+      <span className="">Sample Case study </span>
+    </a>
 
               </motion.div>
 
