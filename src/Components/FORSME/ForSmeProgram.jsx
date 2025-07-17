@@ -34,7 +34,7 @@ export default function ForSmeProgram() {
         {/* Section Heading */}
         <div className="text-center mb-7">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            What You'll Build in 90 Days
+            What You'll Build in First 90 days 
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             A comprehensive system that transforms your SME from struggling to scaling

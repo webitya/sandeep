@@ -20,7 +20,7 @@ export default function Home() {
       <ForSmeCaseStudies />
       <ForSmeTargetAudience />
       <ForSmePricing />
-      <ForSmeFounder />
+      {/* <ForSmeFounder /> */}
       <ForSmeCTA />
     </div>
     <FooterEl/>

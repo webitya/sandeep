@@ -22,6 +22,10 @@ import HomeTestimonials from "../Components/HomePageV2/HomeTestimonials"
 import HomeCTA from "../Components/HomePageV2/HomeCTA"
 import HomePageCompany from "@/Components/HomePage/HomePageCompany"
 import HomeOurPrograms from "../Components/HomePageV2/HomeOurPrograms"
+import HomeBusinessInsight from "@/Components/HomePageV2/HomeBusinessInsight"
+import HomeCorePositioningPillars from "@/Components/HomePageV2/HomeCorePillars"
+import HomeProblemWeSolve from "@/Components/HomePageV2/HomeProblemWeSolve"
+import HomeHowWeHelp from "@/Components/HomePageV2/HomeHowWeHelp"
 
 const HomePage=()=>{
   return (
@@ -38,17 +42,21 @@ const HomePage=()=>{
       <HomePageFAQSection/>
       <HomePageCTA/> */}
       <HomeHero/>
-       <HomePageCompany/>
+       <HomeBusinessInsight/>
       <HomeAbout/>
+      <HomeCorePositioningPillars/>
+      <HomeProblemWeSolve/>
+      <HomeHowWeHelp/>
       <HomeFeatures/>
       <HomeAudience/>
-      <HomeOurPrograms/>
+      {/* <HomeOurPrograms/> */}
       <HomeComparison/>
       <HomeProgramArchitecture/>
       <HomeFAQ/>
       <HomeTestimonials/>
+       <HomePageCompany/>
       <HomeCTA/>
- 
+
       <FooterEl/>
     </>
   )

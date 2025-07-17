@@ -38,7 +38,7 @@ export default function ForSmeJourney() {
             Your Growth Journey
           </h2>
           <p className="text-lg text-gray-600 mt-3">
-            A step-by-step process designed to transform your SME in just 90 days
+            A step-by-step process designed to transform your SME 
           </p>
           <div className="mt-4 w-24 mx-auto h-1 bg-blue-200 rounded-full"></div>
         </div>

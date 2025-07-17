@@ -20,7 +20,7 @@ export default function ForSmeCTA() {
           Ready to Fix Your Sales & Marketing?
         </h2>
         <p className="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
-          Join hundreds of SME founders who transformed their businesses in just 90 days.
+          Join hundreds of SME founders who transformed their businesses
         </p>
 
         {/* CTA Buttons */}
@@ -45,7 +45,7 @@ export default function ForSmeCTA() {
         <div className="mt-8 text-blue-100 text-sm flex justify-center gap-3 flex-wrap">
           <div className="flex items-center gap-1">
             <CheckCircleOutline className="w-4 h-4" />
-            90-Day Accelerator
+            365-Day Accelerator
           </div>
           <div className="flex items-center gap-1">
             <CheckCircleOutline className="w-4 h-4" />
