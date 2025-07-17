@@ -59,7 +59,7 @@ export async function POST(request) {
           </p>
           <p>In the meantime, feel free to prepare by reflecting on your sales and marketing experiences. We look forward to speaking with you!</p>
           <p style="margin-top: 30px;">Best regards,</p>
-          <p><strong>The [Your Company Name] Team</strong></p>
+          <p><strong>SalesSyllabus</strong></p>
         </div>
         <div style="background-color: #f8f8f8; color: #777; padding: 20px; text-align: center; font-size: 12px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
           <p>&copy; ${new Date().getFullYear()} [Your Company Name]. All rights reserved.</p>
