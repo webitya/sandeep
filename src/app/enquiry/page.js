@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { CalendarIcon, MailIcon, PhoneIcon, UserIcon, BriefcaseIcon, CheckCircleIcon, XCircleIcon } from "lucide-react"
-import FooterEl from "@/components/FooterEl"
+import FooterEl from "../../Components/FooterEl"
 
 export default function EnquiryPage() {
   const [formData, setFormData] = useState({
